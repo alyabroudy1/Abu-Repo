@@ -6,6 +6,7 @@
         "version": 8,
         "apiVersion": 1,
         "status": 1,
+        "fileSize": 13771,
         "description": "مشاهدة الافلام والمسلسلات - FaselHD",
         "authors": [
             "AbuRepo"
@@ -27,6 +28,7 @@
         "version": 5,
         "apiVersion": 1,
         "status": 1,
+        "fileSize": 16641,
         "description": "ماي سيما - مشاهدة أحدث الأفلام والمسلسلات",
         "authors": [
             "AbuRepo"
@@ -46,6 +48,7 @@
         "version": 5,
         "apiVersion": 1,
         "status": 1,
+        "fileSize": 17472,
         "description": "مشاهدة افلام ومسلسلات - CimaLeek",
         "authors": [
             "AbuRepo"
@@ -67,6 +70,7 @@
         "version": 5,
         "apiVersion": 1,
         "status": 1,
+        "fileSize": 17967,
         "description": "ايجي بست - مشاهدة أفلام ومسلسلات",
         "authors": [
             "AbuRepo"
@@ -86,6 +90,7 @@
         "version": 5,
         "apiVersion": 1,
         "status": 1,
+        "fileSize": 15868,
         "description": "مشاهدة افلام و مسلسلات و انمي - EgyDead",
         "authors": [
             "AbuRepo"
@@ -106,6 +111,7 @@
         "version": 5,
         "apiVersion": 1,
         "status": 1,
+        "fileSize": 16962,
         "description": "عرب سيد - مشاهدة أفلام ومسلسلات",
         "authors": [
             "AbuRepo"
