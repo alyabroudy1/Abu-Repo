@@ -1,0 +1,73 @@
+> Task :ArabSeed:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :ArabSeed:preBuild UP-TO-DATE
+> Task :ArabSeed:preDebugBuild UP-TO-DATE
+> Task :ArabSeed:generateDebugResValues
+> Task :ArabSeed:generateDebugResources
+> Task :ArabSeed:packageDebugResources
+> Task :CimaLeek:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :CimaLeek:preBuild UP-TO-DATE
+> Task :CimaLeek:preDebugBuild UP-TO-DATE
+> Task :CimaLeek:generateDebugResValues
+> Task :CimaLeek:generateDebugResources
+> Task :CimaLeek:packageDebugResources
+> Task :EgyBest:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :EgyBest:preBuild UP-TO-DATE
+> Task :EgyBest:preDebugBuild UP-TO-DATE
+> Task :EgyBest:generateDebugResValues
+> Task :EgyBest:generateDebugResources
+> Task :ArabSeed:parseDebugLocalResources
+> Task :CimaLeek:parseDebugLocalResources
+> Task :EgyBest:packageDebugResources
+> Task :EgyDead:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :EgyDead:preBuild UP-TO-DATE
+> Task :EgyDead:preDebugBuild UP-TO-DATE
+> Task :EgyBest:parseDebugLocalResources
+> Task :EgyDead:generateDebugResValues
+> Task :EgyDead:generateDebugResources
+> Task :CimaLeek:generateDebugRFile
+> Task :ArabSeed:generateDebugRFile
+> Task :EgyBest:generateDebugRFile
+> Task :EgyDead:packageDebugResources
+> Task :FaselHD:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :FaselHD:preBuild UP-TO-DATE
+> Task :FaselHD:preDebugBuild UP-TO-DATE
+> Task :EgyDead:parseDebugLocalResources
+> Task :FaselHD:generateDebugResValues
+> Task :EgyDead:generateDebugRFile
+> Task :FaselHD:generateDebugResources
+> Task :FaselHD:packageDebugResources
+> Task :MyCima:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :MyCima:preBuild UP-TO-DATE
+> Task :MyCima:preDebugBuild UP-TO-DATE
+> Task :FaselHD:parseDebugLocalResources
+> Task :MyCima:generateDebugResValues
+> Task :MyCima:generateDebugResources
+> Task :FaselHD:generateDebugRFile
+> Task :MyCima:packageDebugResources
+> Task :MyCima:parseDebugLocalResources
+> Task :MyCima:generateDebugRFile
+
+> Task :FaselHD:compileDebugKotlin FAILED
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:145:21 'constructor(source: String, name: String, url: String, referer: String, quality: Int, isM3u8: Boolean = ..., headers: Map<String, String> = ..., extractorData: String? = ...): ExtractorLink' is deprecated. Use newExtractorLink.
+
+> Task :EgyDead:compileDebugKotlin
+> Task :MyCima:compileDebugKotlin
+> Task :CimaLeek:compileDebugKotlin
+> Task :ArabSeed:compileDebugKotlin
+> Task :EgyBest:compileDebugKotlin
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':FaselHD:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 6s
+36 actionable tasks: 36 executed

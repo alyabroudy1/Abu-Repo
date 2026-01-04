@@ -3,10 +3,10 @@
         "internalName": "FaselHD",
         "name": "FaselHD",
         "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/FaselHD.cs3",
-        "version": 9,
+        "version": 10,
         "apiVersion": 1,
         "status": 1,
-        "fileSize": 14535,
+        "fileSize": 12654,
         "description": "مشاهدة الافلام والمسلسلات - FaselHD",
         "authors": [
             "AbuRepo"
@@ -25,10 +25,10 @@
         "internalName": "MyCima",
         "name": "MyCima",
         "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/MyCima.cs3",
-        "version": 5,
+        "version": 6,
         "apiVersion": 1,
         "status": 1,
-        "fileSize": 17010,
+        "fileSize": 17532,
         "description": "ماي سيما - مشاهدة أحدث الأفلام والمسلسلات",
         "authors": [
             "AbuRepo"
