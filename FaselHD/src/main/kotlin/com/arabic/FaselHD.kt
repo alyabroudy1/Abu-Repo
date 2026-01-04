@@ -60,12 +60,12 @@ class FaselHD : MainAPI() {
         val year = Regex("(\\d{4})").find(title)?.groupValues?.getOrNull(1)?.toIntOrNull()
         
         return if (href.contains("/مسلسل-") || href.contains("series") || href.contains("season")) {
-            newTvSeriesSearchResponse(title, href, TvType.TvSeries) {
+            newTvSeriesSearchResponse(title, fullHref, TvType.TvSeries) {
                 this.posterUrl = posterUrl
                 this.year = year
             }
         } else {
-            newMovieSearchResponse(title, href, TvType.Movie) {
+            newMovieSearchResponse(title, fullHref, TvType.Movie) {
                 this.posterUrl = posterUrl
                 this.year = year
             }
@@ -80,43 +80,54 @@ class FaselHD : MainAPI() {
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        val document = app.get(url).document
-        
+        val document = app.get(url, headers = headers).document
+
         val title = document.selectFirst("h1.postTitle, h1.title, .post-title h1, .box--title")?.text()
-            ?: document.selectFirst("title")?.text()?.substringBefore(" مترجم")
-            ?: return null
-            
-        val poster = document.selectFirst("div.poster img, .posterBlock img")?.attr("src")
-        val description = document.selectFirst("div.story, div.singlePostContent p, .synopsis")?.text()
-        val year = Regex("(\\d{4})").find(title)?.groupValues?.getOrNull(1)?.toIntOrNull()
-        val tags = document.select("span.genres a, .singleInfoP a").map { it.text() }
-        
-        // Check if it's a series by looking for episodes
-        val episodes = document.select("div.seasonDiv a, .epsList a, a.epAll").mapNotNull { ep ->
+            ?.substringBefore(" مترجم") ?: document.selectFirst("title")?.text()?.substringBefore(" مترجم") ?: return null
+
+        val poster = document.selectFirst("div.poster img, .posterBlock img, .single--poster img")?.let { img ->
+            img.attr("src").ifBlank { img.attr("data-image") }
+        }
+
+        val plot = document.selectFirst("div.post--content--inner, div.story, div.singlePostContent p")?.text()
+            ?.trim()
+
+        val year = document.selectFirst("ul.terms--and--metas li:contains(السنه) a")?.text()?.toIntOrNull()
+            ?: Regex("(\\d{4})").find(title)?.groupValues?.getOrNull(1)?.toIntOrNull()
+
+        val tags = document.select("ul.genres a, span.genres a").map { it.text() }
+
+        val recommendations = document.select(".box--item").mapNotNull { it.toSearchResult() }
+
+        // Check if it's a series
+        val episodes = document.select("div.episodes--list--side a, .episodesList a, .episodes-list a").mapNotNull { ep ->
             val epTitle = ep.text()
             val epHref = ep.attr("href")
             if (epHref.isBlank()) return@mapNotNull null
             
+            // Extract episode number
             val episodeNum = Regex("(\\d+)").find(epTitle)?.groupValues?.getOrNull(1)?.toIntOrNull()
             newEpisode(epHref) {
                 this.name = epTitle
                 this.episode = episodeNum
             }
         }
-        
-        return if (episodes.isNotEmpty()) {
+
+        return if (episodes.isNotEmpty() || url.contains("series") || url.contains("season")) {
             newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
                 this.posterUrl = poster
-                this.plot = description
+                this.plot = plot
                 this.year = year
                 this.tags = tags
+                this.recommendations = recommendations
             }
         } else {
             newMovieLoadResponse(title, url, TvType.Movie, url) {
                 this.posterUrl = poster
-                this.plot = description
+                this.plot = plot
                 this.year = year
                 this.tags = tags
+                this.recommendations = recommendations
             }
         }
     }
@@ -127,69 +138,36 @@ class FaselHD : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        val document = app.get(data).document
-        
-        // Find iframe sources
-        document.select("iframe").forEach { iframe ->
+        // Movies/Episodes usually have the player on the /watch page
+        val watchUrl = if (data.endsWith("/watch")) data else "$data/watch"
+        val document = app.get(watchUrl, headers = headers).document
+
+        // 1. Parse Server List (.server--item)
+        // The structure is: <li class="server--item">...</li> <li class="embed-src" data-src="..."></li>
+        val serverItems = document.select(".server--item")
+        serverItems.forEach { serverItem ->
+            val embedSrc = serverItem.nextElementSibling()
+            if (embedSrc != null && embedSrc.hasClass("embed-src")) {
+                val src = embedSrc.attr("data-src")
+                if (src.isNotBlank()) {
+                    loadExtractor(src, mainUrl, subtitleCallback, callback)
+                }
+            }
+        }
+
+        // 2. Check for Iframe (often the first server is pre-loaded into #serverIframe or .player--iframe iframe)
+        document.select("iframe[name='player_iframe'], #serverIframe, .player--iframe iframe").forEach { iframe ->
             val src = iframe.attr("src").ifBlank { iframe.attr("data-src") }
             if (src.isNotBlank()) {
                 loadExtractor(src, mainUrl, subtitleCallback, callback)
             }
         }
-        
-        // Find direct video sources
-        document.select("source, video source").forEach { source ->
-            val src = source.attr("src")
-            if (src.isNotBlank() && (src.contains(".mp4") || src.contains(".m3u8"))) {
-                callback.invoke(
-                    newExtractorLink(
-                        source = name,
-                        name = name,
-                        url = src,
-                        type = if (src.contains(".m3u8")) ExtractorLinkType.M3U8 else ExtractorLinkType.VIDEO
-                    ) {
-                        this.referer = mainUrl
-                    }
-                )
-            }
-        }
-        
-        // Find player div with data attributes
-        document.select("div[data-url], div[data-src]").forEach { div ->
-            val src = div.attr("data-url").ifBlank { div.attr("data-src") }
-            if (src.isNotBlank()) {
-                loadExtractor(src, mainUrl, subtitleCallback, callback)
-            }
-        }
-        
-        // Look for embedded player scripts
-        val scripts = document.select("script").map { it.data() }
-        scripts.forEach { script ->
-            Regex("""["'](https?://[^"']+\.m3u8[^"']*)["']""").findAll(script).forEach { match ->
-                val m3u8Url = match.groupValues[1]
-                callback.invoke(
-                    newExtractorLink(
-                        source = name,
-                        name = "$name - HLS",
-                        url = m3u8Url,
-                        type = ExtractorLinkType.M3U8
-                    ) {
-                        this.referer = mainUrl
-                    }
-                )
-            }
-            Regex("""["'](https?://[^"']+\.mp4[^"']*)["']""").findAll(script).forEach { match ->
-                val mp4Url = match.groupValues[1]
-                callback.invoke(
-                    newExtractorLink(
-                        source = name,
-                        name = "$name - MP4",
-                        url = mp4Url,
-                        type = ExtractorLinkType.VIDEO
-                    ) {
-                        this.referer = mainUrl
-                    }
-                )
+
+        // 3. Download Links (often contain valid streams or direct files)
+        document.select("div.downloads a.download--item, a.download--direct").forEach { dl ->
+            val href = dl.attr("href")
+            if (href.isNotBlank() && !href.startsWith("javascript")) {
+                 loadExtractor(href, mainUrl, subtitleCallback, callback)
             }
         }
         
