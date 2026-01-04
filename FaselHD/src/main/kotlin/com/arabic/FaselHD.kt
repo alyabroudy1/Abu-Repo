@@ -16,6 +16,13 @@ class FaselHD : MainAPI() {
         TvType.AsianDrama
     )
 
+    private val headers = mapOf(
+        "User-Agent" to "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept" to "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language" to "en-US,en;q=0.5",
+        "Referer" to "$mainUrl/"
+    )
+
     override val mainPage = mainPageOf(
         "$mainUrl/category/%d8%a7%d9%81%d9%84%d8%a7%d9%85/page/" to "أفلام",
         "$mainUrl/category/%d9%85%d8%b3%d9%84%d8%b3%d9%84%d8%a7%d8%aa/page/" to "مسلسلات",
@@ -24,16 +31,32 @@ class FaselHD : MainAPI() {
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        val document = app.get(request.data + page).document
-        val home = document.select("div.postDiv").mapNotNull { it.toSearchResult() }
+        val document = app.get(request.data + page, headers = headers).document
+        val home = document.select(".postDiv, .box--item").mapNotNull { 
+            it.toSearchResult() 
+        }
         return newHomePageResponse(request.name, home)
     }
 
     private fun Element.toSearchResult(): SearchResponse? {
-        val title = selectFirst("h3")?.text() ?: selectFirst("a")?.attr("title") ?: return null
-        val href = selectFirst("a")?.attr("href") ?: return null
-        val posterUrl = selectFirst("img")?.attr("data-src") 
-            ?: selectFirst("img")?.attr("src")
+        val anchor = selectFirst("a") ?: return null
+        val title = selectFirst("h3, .title, a[title], .box--title")?.text()?.trim() 
+            ?: anchor.attr("title").ifBlank { return null }
+        
+        val href = anchor.attr("href")
+        if (href.isBlank()) return null
+        
+        val fullHref = if (href.startsWith("http")) href else "$mainUrl$href"
+        
+        val posterUrl = selectFirst("img")?.let { img ->
+            img.attr("data-image").ifBlank {
+                img.attr("data-src").ifBlank { 
+                    img.attr("src").ifBlank { 
+                        img.attr("data-lazy-src") 
+                    }
+                }
+            }
+        }
         val year = Regex("(\\d{4})").find(title)?.groupValues?.getOrNull(1)?.toIntOrNull()
         
         return if (href.contains("/مسلسل-") || href.contains("series") || href.contains("season")) {
@@ -50,14 +73,16 @@ class FaselHD : MainAPI() {
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val document = app.get("$mainUrl/?s=$query").document
-        return document.select("div.postDiv").mapNotNull { it.toSearchResult() }
+        val document = app.get("$mainUrl/?s=$query", headers = headers).document
+        return document.select(".movie, .card, article.item, .film-card, .search-result, .box--item").mapNotNull { 
+            it.toSearchResult() 
+        }
     }
 
     override suspend fun load(url: String): LoadResponse? {
         val document = app.get(url).document
         
-        val title = document.selectFirst("h1.postTitle, h1.title, .post-title h1")?.text()
+        val title = document.selectFirst("h1.postTitle, h1.title, .post-title h1, .box--title")?.text()
             ?: document.selectFirst("title")?.text()?.substringBefore(" مترجم")
             ?: return null
             
