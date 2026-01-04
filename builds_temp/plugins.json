@@ -1,0 +1,97 @@
+[
+    {
+        "name": "FaselHD",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/FaselHD.cs3",
+        "version": 8,
+        "description": "مشاهدة الافلام والمسلسلات - FaselHD",
+        "authors": [
+            "AbuRepo"
+        ],
+        "language": "ar",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://faselhd.cloud/wp-content/uploads/2022/02/favicon.png"
+    },
+    {
+        "name": "MyCima",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/MyCima.cs3",
+        "version": 5,
+        "description": "ماي سيما - مشاهدة أحدث الأفلام والمسلسلات",
+        "authors": [
+            "AbuRepo"
+        ],
+        "language": "ar",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://my-cima.video/favicon.ico"
+    },
+    {
+        "name": "CimaLeek",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/CimaLeek.cs3",
+        "version": 5,
+        "description": "مشاهدة افلام ومسلسلات - CimaLeek",
+        "authors": [
+            "AbuRepo"
+        ],
+        "language": "ar",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://cimalek.art/favicon.ico"
+    },
+    {
+        "name": "EgyBest",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/EgyBest.cs3",
+        "version": 5,
+        "description": "ايجي بست - مشاهدة أفلام ومسلسلات",
+        "authors": [
+            "AbuRepo"
+        ],
+        "language": "ar",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://egybest.la/favicon.ico"
+    },
+    {
+        "name": "EgyDead",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/EgyDead.cs3",
+        "version": 5,
+        "description": "مشاهدة افلام و مسلسلات و انمي - EgyDead",
+        "authors": [
+            "AbuRepo"
+        ],
+        "language": "ar",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime"
+        ],
+        "iconUrl": "https://egydead.skin/wp-content/uploads/2023/05/cropped-favicon-270x270.png"
+    },
+    {
+        "name": "ArabSeed",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/ArabSeed.cs3",
+        "version": 5,
+        "description": "عرب سيد - مشاهدة أفلام ومسلسلات",
+        "authors": [
+            "AbuRepo"
+        ],
+        "language": "ar",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://a.asd.homes/favicon.ico"
+    }
+]
