@@ -1,7 +1,7 @@
 [
     {
         "name": "FaselHD",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/FaselHD.cs3",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/builds_temp/FaselHD.cs3",
         "version": 8,
         "description": "مشاهدة الافلام والمسلسلات - FaselHD",
         "authors": [
@@ -18,7 +18,7 @@
     },
     {
         "name": "MyCima",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/MyCima.cs3",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/builds_temp/MyCima.cs3",
         "version": 5,
         "description": "ماي سيما - مشاهدة أحدث الأفلام والمسلسلات",
         "authors": [
@@ -33,7 +33,7 @@
     },
     {
         "name": "CimaLeek",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/CimaLeek.cs3",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/builds_temp/CimaLeek.cs3",
         "version": 5,
         "description": "مشاهدة افلام ومسلسلات - CimaLeek",
         "authors": [
@@ -50,7 +50,7 @@
     },
     {
         "name": "EgyBest",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/EgyBest.cs3",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/builds_temp/EgyBest.cs3",
         "version": 5,
         "description": "ايجي بست - مشاهدة أفلام ومسلسلات",
         "authors": [
@@ -65,7 +65,7 @@
     },
     {
         "name": "EgyDead",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/EgyDead.cs3",
+        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/builds_temp/EgyDead.cs3",
         "version": 5,
         "description": "مشاهدة افلام و مسلسلات و انمي - EgyDead",
         "authors": [
