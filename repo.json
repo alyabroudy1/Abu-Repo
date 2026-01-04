@@ -1,0 +1,10 @@
+{
+    "name": "Arabic Providers",
+    "description": "Arabic streaming providers for CloudStream - FaselHD, MyCima, CimaLeek, EgyBest, EgyDead, ArabSeed",
+    "authors": [
+        "AbuRepo"
+    ],
+    "pluginLists": [
+        "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/plugins.json"
+    ]
+}

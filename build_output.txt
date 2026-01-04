@@ -1,0 +1,244 @@
+﻿Initialized native services in: C:\Users\abu-o\.gradle\native
+Initialized jansi services in: C:\Users\abu-o\.gradle\native
+Found daemon DaemonInfo{pid=16672, address=[c2aacfec-5c51-4da1-8106-b2e6282d38c2 port:57810, addresses:[/127.0.0.1]], state=Idle, lastBusy=1767389621669, context=DefaultDaemonContext[uid=ec9179b8-dc91-4a3a-8ce7-46a922d18825,javaHome=C:\Users\abu-o\.antigravity\extensions\redhat.java-1.50.0-win32-x64\jre\21.0.9-win32-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=C:\Users\abu-o\.gradle\daemon,pid=16672,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Program Files\Java\jdk-18.0.2.1 (no JDK specified, using current Java home), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=ec9179b8-dc91-4a3a-8ce7-46a922d18825,javaHome=C:\Users\abu-o\.antigravity\extensions\redhat.java-1.50.0-win32-x64\jre\21.0.9-win32-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=C:\Users\abu-o\.gradle\daemon,pid=16672,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=24200, address=[0a1442db-d3be-4a78-b5d8-ee4c75fdab32 port:51788, addresses:[/127.0.0.1]], state=Idle, lastBusy=1767536499102, context=DefaultDaemonContext[uid=a628f91c-4c8d-4378-b121-2bb1f5619e42,javaHome=C:\Users\abu-o\AppData\Local\Programs\Android Studio 2\jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=C:\Users\abu-o\.gradle\daemon,pid=24200,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Program Files\Java\jdk-18.0.2.1 (no JDK specified, using current Java home), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=a628f91c-4c8d-4378-b121-2bb1f5619e42,javaHome=C:\Users\abu-o\AppData\Local\Programs\Android Studio 2\jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=C:\Users\abu-o\.gradle\daemon,pid=24200,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 42368). The daemon log file: C:\Users\abu-o\.gradle\daemon\9.0.0\daemon-42368.out.log
+Starting 4th build in daemon [uptime: 1 mins 16.786 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 16 worker leases.
+Now considering [C:\Users\abu-o\Abu Repo] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\abu-o\Abu Repo\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\abu-o\Abu Repo\build.gradle.kts'.
+Included projects: [root project 'ArabicProviders', project ':ArabSeed', project ':CimaLeek', project ':EgyBest', project ':EgyDead', project ':FaselHD', project ':MyCima']
+
+> Configure project :
+Evaluating root project 'ArabicProviders' using build file 'C:\Users\abu-o\Abu Repo\build.gradle.kts'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+
+> Configure project :ArabSeed
+Evaluating project ':ArabSeed' using build file 'C:\Users\abu-o\Abu Repo\ArabSeed\build.gradle.kts'.
+
+> Configure project :CimaLeek
+Evaluating project ':CimaLeek' using build file 'C:\Users\abu-o\Abu Repo\CimaLeek\build.gradle.kts'.
+
+> Configure project :EgyBest
+Evaluating project ':EgyBest' using build file 'C:\Users\abu-o\Abu Repo\EgyBest\build.gradle.kts'.
+
+> Configure project :EgyDead
+Evaluating project ':EgyDead' using build file 'C:\Users\abu-o\Abu Repo\EgyDead\build.gradle.kts'.
+
+> Configure project :FaselHD
+Evaluating project ':FaselHD' using build file 'C:\Users\abu-o\Abu Repo\FaselHD\build.gradle.kts'.
+
+> Configure project :MyCima
+Evaluating project ':MyCima' using build file 'C:\Users\abu-o\Abu Repo\MyCima\build.gradle.kts'.
+All projects evaluated.
+Task path ':FaselHD:compileDebugKotlin' matched project ':FaselHD'
+Task name matched 'compileDebugKotlin'
+Selected primary task 'compileDebugKotlin' from project :FaselHD
+Tasks to be executed: [task ':FaselHD:checkKotlinGradlePluginConfigurationErrors', task ':FaselHD:preBuild', task ':FaselHD:preDebugBuild', task ':FaselHD:generateDebugResValues', task ':FaselHD:generateDebugResources', task ':FaselHD:packageDebugResources', task ':FaselHD:parseDebugLocalResources', task ':FaselHD:generateDebugRFile', task ':FaselHD:compileDebugKotlin']
+Tasks that were excluded: []
+Resolve mutations for :FaselHD:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+:FaselHD:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :FaselHD:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':FaselHD:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :FaselHD:preBuild (Thread[Execution worker Thread 4,5,main]) started.
+:FaselHD:preBuild (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :FaselHD:preBuild UP-TO-DATE
+Skipping task ':FaselHD:preBuild' as it has no actions.
+Resolve mutations for :FaselHD:preDebugBuild (Thread[Execution worker Thread 4,5,main]) started.
+:FaselHD:preDebugBuild (Thread[Execution worker Thread 13,5,main]) started.
+
+> Task :FaselHD:preDebugBuild UP-TO-DATE
+Skipping task ':FaselHD:preDebugBuild' as it has no actions.
+Resolve mutations for :FaselHD:generateDebugResValues (Thread[Execution worker Thread 13,5,main]) started.
+:FaselHD:generateDebugResValues (Thread[Execution worker Thread 13,5,main]) started.
+
+> Task :FaselHD:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':FaselHD:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':FaselHD:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :FaselHD:generateDebugResources (Thread[Execution worker Thread 13,5,main]) started.
+:FaselHD:generateDebugResources (Thread[Execution worker Thread 13,5,main]) started.
+
+> Task :FaselHD:generateDebugResources UP-TO-DATE
+Caching disabled for task ':FaselHD:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':FaselHD:generateDebugResources' as it is up-to-date.
+Resolve mutations for :FaselHD:packageDebugResources (Thread[Execution worker Thread 13,5,main]) started.
+:FaselHD:packageDebugResources (Thread[Execution worker Thread 13,5,main]) started.
+
+> Task :FaselHD:packageDebugResources UP-TO-DATE
+Caching disabled for task ':FaselHD:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':FaselHD:packageDebugResources' as it is up-to-date.
+Resolve mutations for :FaselHD:parseDebugLocalResources (Thread[Execution worker Thread 13,5,main]) started.
+:FaselHD:parseDebugLocalResources (Thread[Execution worker Thread 13,5,main]) started.
+
+> Task :FaselHD:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':FaselHD:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':FaselHD:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :FaselHD:generateDebugRFile (Thread[Execution worker Thread 13,5,main]) started.
+:FaselHD:generateDebugRFile (Thread[Execution worker Thread 13,5,main]) started.
+
+> Task :FaselHD:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':FaselHD:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':FaselHD:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :FaselHD:compileDebugKotlin (Thread[Execution worker Thread 13,5,main]) started.
+:FaselHD:compileDebugKotlin (Thread[Execution worker Thread 13,5,main]) started.
+
+> Task :FaselHD:compileDebugKotlin FAILED
+Caching disabled for task ':FaselHD:compileDebugKotlin' because:
+  Build cache is disabled
+Task ':FaselHD:compileDebugKotlin' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':FaselHD:compileDebugKotlin'.
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\kotlin', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\main\java', not found
+file or directory 'C:\Users\abu-o\Abu Repo\FaselHD\src\debug\java', not found
+Kotlin source files: C:\Users\abu-o\Abu Repo\FaselHD\src\main\kotlin\com\arabic\FaselHD.kt, C:\Users\abu-o\Abu Repo\FaselHD\src\main\kotlin\com\arabic\FaselHDPlugin.kt
+Java source files: 
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), areFileChangesKnown=false, modifiedFiles=null, deletedFiles=null, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=C:\Users\abu-o\Abu Repo\FaselHD\build\kotlin\compileDebugKotlin\cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=C:\Users\abu-o\Abu Repo\FaselHD\build\kotlin\compileDebugKotlin\local-state\build-history.bin, useModuleDetection=true), usePreciseJavaTracking=true, icFeatures=IncrementalCompilationFeatures(withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false), outputFiles=[C:\Users\abu-o\Abu Repo\FaselHD\build\tmp\kotlin-classes\debug, C:\Users\abu-o\Abu Repo\FaselHD\build\kotlin\compileDebugKotlin\cacheable, C:\Users\abu-o\Abu Repo\FaselHD\build\kotlin\compileDebugKotlin\local-state])
+.\gradlew.bat : e: file:///C:/Users/abu-o/Abu%20Repo
+/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:69:82
+ 'fun String?.toRatingInt(): Int?' is deprecated. 
+toRatingInt() is deprecated. Use new score API 
+instead.
+At line:1 char:1
++ .\gradlew.bat :FaselHD:compileDebugKotlin --info 
+2>&1 | Out-File -Fil ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo          : NotSpecified: (e: fil 
+   e:///C:/U...re API instead.:String) [], RemoteE  
+  xception
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/mai
+n/kotlin/com/arabic/FaselHD.kt:78:13 
+'constructor(data: String, name: String? = ..., 
+season: Int? = ..., episode: Int? = ..., posterUrl: 
+String? = ..., score: Score? = ..., description: 
+String? = ..., date: Long? = ..., runTime: Int? = 
+...): Episode' is deprecated. Use newEpisode method.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/mai
+n/kotlin/com/arabic/FaselHD.kt:91:22 'var rating: 
+Int?' is deprecated. `rating` is the old scoring 
+system, use score instead.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/mai
+n/kotlin/com/arabic/FaselHD.kt:99:22 'var rating: 
+Int?' is deprecated. `rating` is the old scoring 
+system, use score instead.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/mai
+n/kotlin/com/arabic/FaselHD.kt:125:21 
+'constructor(source: String, name: String, url: 
+String, referer: String, quality: Int, isM3u8: 
+Boolean = ..., headers: Map<String, String> = ..., 
+extractorData: String? = ...): ExtractorLink' is 
+deprecated. Use newExtractorLink.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/mai
+n/kotlin/com/arabic/FaselHD.kt:151:21 
+'constructor(source: String, name: String, url: 
+String, referer: String, quality: Int, isM3u8: 
+Boolean = ..., headers: Map<String, String> = ..., 
+extractorData: String? = ...): ExtractorLink' is 
+deprecated. Use newExtractorLink.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/mai
+n/kotlin/com/arabic/FaselHD.kt:164:21 
+'constructor(source: String, name: String, url: 
+String, referer: String, quality: Int, isM3u8: 
+Boolean = ..., headers: Map<String, String> = ..., 
+extractorData: String? = ...): ExtractorLink' is 
+deprecated. Use newExtractorLink.
+Finished executing kotlin compiler using DAEMON strategy
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task 
+':FaselHD:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.k
+otlin.compilerRunner.GradleCompilerRunnerWithWorkers
+$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack 
+trace.
+> Run with --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered 
+by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1s
+6 actionable tasks: 1 executed, 5 up-to-date
+Watched directory hierarchies: [C:\Users\abu-o\Abu Repo]
