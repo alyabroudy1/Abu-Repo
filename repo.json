@@ -1,6 +1,7 @@
 {
     "name": "Arabic Providers",
     "description": "Arabic streaming providers for CloudStream - FaselHD, MyCima, CimaLeek, EgyBest, EgyDead, ArabSeed",
+    "manifestVersion": 1,
     "authors": [
         "AbuRepo"
     ],
