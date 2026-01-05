@@ -6,7 +6,7 @@ import org.jsoup.nodes.Element
 import android.util.Base64
 
 class FaselHD : MainAPI() {
-    override var mainUrl = "https://faselhd.cloud"
+    override var mainUrl = "https://www.faselhd.center"
     override var name = "FaselHD"
     override val hasMainPage = true
     override var lang = "ar"
@@ -128,6 +128,7 @@ class FaselHD : MainAPI() {
         }
     }
 
+
     override suspend fun loadLinks(
         data: String,
         isCasting: Boolean,
@@ -139,6 +140,12 @@ class FaselHD : MainAPI() {
         
         // Helper to run extraction on a document
         suspend fun extractFromDoc(doc: org.jsoup.nodes.Document) {
+             if (doc.title().contains("Just a moment", ignoreCase = true)) {
+                 // Warning: This means Cloudflare might be blocking us and CloudStream's auto-bypass didn't work.
+                 // We can't do much here without a WebView, but logging/throwing might help the user understand.
+                 // For now, we continue hoping regex matches something, but it likely won't.
+             }
+
              // 1. Broad Iframe Search
             // "iframe" matches ANY iframe. We filter by Src.
             doc.select("iframe").forEach { iframe ->
@@ -170,10 +177,18 @@ class FaselHD : MainAPI() {
                 }
             }
 
-            // 4. Regex for scripts (The "Nuclear Option")
-            // Instead of selecting specific scripts, we get the WHOLE html and regex it.
-            // This covers variables in <head>, <body>, or inline events.
+            // 4. Specific OnClick Search (From omerFlex_3 discovery)
+            // Looks for onclick="player_iframe.location.href = '...'"
             val html = doc.html()
+            Regex("""player_iframe\.location\.href\s*=\s*['"]([^'"]+)['"]""").findAll(html).forEach { match ->
+                val url = match.groupValues[1]
+                if (url.startsWith("http")) {
+                     loadExtractor(url, mainUrl, subtitleCallback, callback)
+                }
+            }
+
+            // 5. Broad Regex for M3U8/MP4 (The "Nuclear Option")
+            // This covers variables in <head>, <body>, or inline events.
             
             // M3U8
             Regex("""["'](https?://[^"']*\.m3u8[^"']*)["']""").findAll(html).forEach { match ->
@@ -204,7 +219,7 @@ class FaselHD : MainAPI() {
                 )
             }
             
-             // 5. Base64 hash logic (Legacy/Specific FaselHD feature)
+             // 6. Base64 hash logic (Legacy/Specific FaselHD feature)
             doc.selectFirst("#play-video")?.attr("href")?.let { href ->
                 val hash = href.substringAfter("hash=", "").substringBefore("&")
                 if (hash.isNotBlank()) {
