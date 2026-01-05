@@ -5,7 +5,7 @@ import com.lagradost.cloudstream3.utils.*
 import org.jsoup.nodes.Element
 
 class EgyDead : MainAPI() {
-    override var mainUrl = "https://egydead.skin"
+    override var mainUrl = "https://egydead.media"
     override var name = "EgyDead"
     override val hasMainPage = true
     override var lang = "ar"
@@ -15,6 +15,11 @@ class EgyDead : MainAPI() {
         TvType.Anime
     )
 
+    private val headers = mapOf(
+        "User-Agent" to "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer" to "$mainUrl/"
+    )
+
     override val mainPage = mainPageOf(
         "$mainUrl/page/movies?page=" to "أفلام",
         "$mainUrl/episode/?page=" to "أحدث الحلقات",
@@ -22,8 +27,29 @@ class EgyDead : MainAPI() {
         "$mainUrl/category/anime-movie/?page=" to "أفلام انمي"
     )
 
+    // Helper method to simulate the "ScraperInterceptor" logic:
+    // Retry on 403/503 with slight header modification or delay.
+    private suspend fun getSafe(url: String, headers: Map<String, String> = this.headers): com.lagradost.cloudstream3.NiceResponse {
+        return try {
+            app.get(url, headers = headers)
+        } catch (e: Exception) {
+            // Check for common specific errors if possible, or just retry blindly for now as a "robust" measure
+            // for 403/Cloudflare type issues.
+            
+            // Retry once with a "cache bust" or slight tweak
+            val newHeaders = headers.toMutableMap()
+            newHeaders["Cache-Control"] = "no-cache"
+            newHeaders["Pragma"] = "no-cache"
+            
+            // Small delay to be "human-like"
+            kotlinx.coroutines.delay(1000) 
+            
+            app.get(url, headers = newHeaders)
+        }
+    }
+
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        val document = app.get(request.data + page).document
+        val document = getSafe(request.data + page, headers = headers).document
         val home = document.select("div.Block--Item, article.MovieBlock, .blockItem").mapNotNull { 
             it.toSearchResult() 
         }
@@ -71,14 +97,14 @@ class EgyDead : MainAPI() {
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val document = app.get("$mainUrl/?s=$query").document
+        val document = getSafe("$mainUrl/?s=$query", headers = headers).document
         return document.select("div.Block--Item, article.MovieBlock, .blockItem").mapNotNull { 
             it.toSearchResult() 
         }
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        val document = app.get(url).document
+        val document = getSafe(url, headers = headers).document
         
         val title = document.selectFirst("h1.Title, .post-title h1, h1")?.text()?.trim()
             ?: return null
@@ -111,7 +137,7 @@ class EgyDead : MainAPI() {
         document.select(".Seasons a, .seasons-list a").forEach { season ->
             val seasonHref = season.attr("href")
             if (seasonHref.isNotBlank()) {
-                val seasonDoc = app.get(seasonHref).document
+                val seasonDoc = getSafe(seasonHref, headers = headers).document
                 val seasonNum = Regex("(\\d+)").find(season.text())?.groupValues?.getOrNull(1)?.toIntOrNull() ?: 1
                 seasonDoc.select(".EpsList a, .episodes-list a, a.episode").forEach { ep ->
                     val epHref = ep.attr("href")
@@ -151,7 +177,7 @@ class EgyDead : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        val document = app.get(data).document
+        val document = getSafe(data, headers = headers).document
         
         // Find watch servers
         document.select(".WatchServers a, .serversList a, .servers a, li[data-link]").forEach { server ->
