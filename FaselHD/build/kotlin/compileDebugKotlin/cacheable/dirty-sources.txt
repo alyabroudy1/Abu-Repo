@@ -1,0 +1,2 @@
+C:\Users\abu-o\Abu Repo\FaselHD\src\main\kotlin\com\arabic\FaselHD.kt
+C:\Users\abu-o\Abu Repo\FaselHD\src\main\kotlin\com\arabic\FaselHDPlugin.kt
