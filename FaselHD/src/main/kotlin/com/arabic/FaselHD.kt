@@ -6,7 +6,7 @@ import org.jsoup.nodes.Element
 import android.util.Base64
 
 class FaselHD : MainAPI() {
-    override var mainUrl = "https://www.faselhd.center"
+    override var mainUrl = "https://www.faselhds.biz"
     override var name = "FaselHD"
     override val hasMainPage = true
     override var lang = "ar"
@@ -16,6 +16,8 @@ class FaselHD : MainAPI() {
         TvType.Anime,
         TvType.AsianDrama
     )
+
+    override val usesWebView = true
 
 
     override val mainPage = mainPageOf(
@@ -76,7 +78,7 @@ class FaselHD : MainAPI() {
 
     override suspend fun load(url: String): LoadResponse? {
         // Use default app.get which handles cookies/headers automatically often better than hardcoded ones
-        val fixedUrl = url.replace("faselhd.cloud", "www.faselhd.center")
+        val fixedUrl = url.replace("faselhd.cloud", "www.faselhds.biz").replace("faselhd.center", "www.faselhds.biz")
         val document = app.get(fixedUrl).document
 
         val title = document.selectFirst("h1.postTitle, h1.title, .post-title h1, .box--title")?.text()
@@ -137,7 +139,7 @@ class FaselHD : MainAPI() {
         callback: (ExtractorLink) -> Unit
     ): Boolean {
         // Force rewrite legacy domain to new one
-        val fixedData = data.replace("faselhd.cloud", "www.faselhd.center")
+        val fixedData = data.replace("faselhd.cloud", "www.faselhds.biz").replace("faselhd.center", "www.faselhds.biz")
 
         // Attempt to load from the main URL first, then try the /watch variant if needed or if main has no links
         var document = app.get(fixedData).document
