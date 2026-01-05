@@ -44,22 +44,22 @@ class FaselHD : MainAPI() {
     // Retry on 403/503 with slight header modification or delay.
     private suspend fun getSafe(url: String, headers: Map<String, String> = this.headers): com.lagradost.cloudstream3.NiceResponse {
         return try {
-            app.get(url, headers = headers)
+            val response = app.get(url, headers = headers)
+            // DEBUG: Print the first 1000 chars of the response to see if we are getting a valid page or a Block/Captcha page
+            // Use standard println which usually shows up in logcat under System.out or I/System.out
+            println("FASEL_DEBUG: URL: $url")
+            println("FASEL_DEBUG: HTML_START: ${response.text.take(1000)}")
+            response
         } catch (e: Exception) {
-            // Check for common specific errors if possible, or just retry blindly for now as a "robust" measure
-            // for 403/Cloudflare type issues.
-            // Note: simple generic threading delay is bad practice in coroutines, but manageable for a single retry.
-            // Ideally check e.statusCode if available in the specific exception type.
-            
-            // Retry once with a "cache bust" or slight tweak
+            // ... (rest of retry logic)
             val newHeaders = headers.toMutableMap()
             newHeaders["Cache-Control"] = "no-cache"
             newHeaders["Pragma"] = "no-cache"
-            
-            // Small delay to be "human-like"
             kotlinx.coroutines.delay(1000) 
-            
-            app.get(url, headers = newHeaders)
+            val retryResponse = app.get(url, headers = newHeaders)
+            println("FASEL_DEBUG: RETRY_URL: $url")
+            println("FASEL_DEBUG: RETRY_HTML_START: ${retryResponse.text.take(1000)}")
+            retryResponse
         }
     }
 
