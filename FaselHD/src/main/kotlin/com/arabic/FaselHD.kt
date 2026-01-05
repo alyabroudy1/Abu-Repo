@@ -171,43 +171,49 @@ class FaselHD : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        // Movies/Episodes usually have the player on the /watch page
-        val watchUrl = if (data.endsWith("/watch")) data else "$data/watch"
-        val document = getSafe(watchUrl).document
-
-        // 1. Parse Server List (.server--item)
-        val serverItems = document.select(".server--item")
-        serverItems.forEach { serverItem ->
-            val embedSrc = serverItem.nextElementSibling()
-            if (embedSrc != null && embedSrc.hasClass("embed-src")) {
-                val src = embedSrc.attr("data-src")
-                if (src.isNotBlank()) {
-                    loadExtractor(src, mainUrl, subtitleCallback, callback)
+        // Attempt to load from the main URL first, then try the /watch variant if needed or if main has no links
+        var document = getSafe(data).document
+        
+        // Helper to run extraction on a document
+        suspend fun extractFromDoc(doc: org.jsoup.nodes.Document) {
+             // 1. Broad Iframe Search
+            // "iframe" matches ANY iframe. We filter by Src.
+            doc.select("iframe").forEach { iframe ->
+                val src = iframe.attr("src").ifBlank { iframe.attr("data-src") }
+                // Accept any http source, filter in loadExtractor
+                if (src.isNotBlank() && src.startsWith("http")) {
+                     loadExtractor(src, mainUrl, subtitleCallback, callback)
                 }
             }
-        }
-
-        // 2. Check for Iframe (often the first server is pre-loaded)
-        document.select("iframe[name='player_iframe'], #serverIframe, .player--iframe iframe").forEach { iframe ->
-            val src = iframe.attr("src").ifBlank { iframe.attr("data-src") }
-            if (src.isNotBlank()) {
-                loadExtractor(src, mainUrl, subtitleCallback, callback)
+            
+            // 2. Broad Button/Link Search for servers
+            // Many sites use <a href/data-url> or <button data-url> for servers
+            doc.select(".server--item, .servers a, .server-item a, li.server a, a[data-url], button[data-url]").forEach { element ->
+                 val url = element.attr("data-url").ifBlank { 
+                     element.attr("data-src").ifBlank { 
+                         element.attr("href") 
+                     }
+                 }
+                 if (url.isNotBlank() && url.startsWith("http") && !url.contains("facebook") && !url.contains("twitter")) {
+                     loadExtractor(url, mainUrl, subtitleCallback, callback)
+                 }
             }
-        }
-
-        // 3. Download Links
-        document.select("div.downloads a.download--item, a.download--direct").forEach { dl ->
-            val href = dl.attr("href")
-            if (href.isNotBlank() && !href.startsWith("javascript")) {
-                 loadExtractor(href, mainUrl, subtitleCallback, callback)
+            
+            // 3. Look for "embed-src" hidden inputs/divs often used in FaselHD
+             doc.select(".embed-src").forEach { element ->
+                val src = element.attr("data-src").ifBlank { element.attr("data-url") }
+                if (src.isNotBlank()) {
+                     loadExtractor(src, mainUrl, subtitleCallback, callback)
+                }
             }
-        }
 
-        // 4. Regex for hidden links in scripts (Robust Method)
-        document.select("script").forEach { script ->
-            val scriptData = script.data()
-            // Find m3u8 URLs
-            Regex("""["'](https?://[^"']*\.m3u8[^"']*)["']""").findAll(scriptData).forEach { match ->
+            // 4. Regex for scripts (The "Nuclear Option")
+            // Instead of selecting specific scripts, we get the WHOLE html and regex it.
+            // This covers variables in <head>, <body>, or inline events.
+            val html = doc.html()
+            
+            // M3U8
+            Regex("""["'](https?://[^"']*\.m3u8[^"']*)["']""").findAll(html).forEach { match ->
                 val url = match.groupValues[1]
                 callback.invoke(
                     newExtractorLink(
@@ -220,10 +226,10 @@ class FaselHD : MainAPI() {
                     )
                 )
             }
-            // Find mp4 URLs
-            Regex("""["'](https?://[^"']*\.mp4[^"']*)["']""").findAll(scriptData).forEach { match ->
-                val url = match.groupValues[1]
-                callback.invoke(
+            // MP4
+            Regex("""["'](https?://[^"']*\.mp4[^"']*)["']""").findAll(html).forEach { match ->
+                 val url = match.groupValues[1]
+                 callback.invoke(
                     newExtractorLink(
                         source = name,
                         name = "$name - Auto",
@@ -234,24 +240,33 @@ class FaselHD : MainAPI() {
                     )
                 )
             }
-        }
-        
-        // 5. User suggested logic: #play-video hash extraction
-        document.selectFirst("#play-video")?.attr("href")?.let { href ->
-            val hash = href.substringAfter("hash=", "").substringBefore("&")
-            if (hash.isNotBlank()) {
-                 try {
-                     val decodedUrl = String(Base64.decode(hash, Base64.DEFAULT))
-                     loadExtractor(decodedUrl, mainUrl, subtitleCallback, callback)
-                 } catch (e: Exception) {
-                     // ignore
-                 }
+            
+             // 5. Base64 hash logic (Legacy/Specific FaselHD feature)
+            doc.selectFirst("#play-video")?.attr("href")?.let { href ->
+                val hash = href.substringAfter("hash=", "").substringBefore("&")
+                if (hash.isNotBlank()) {
+                     try {
+                         val decodedUrl = String(Base64.decode(hash, Base64.DEFAULT))
+                         loadExtractor(decodedUrl, mainUrl, subtitleCallback, callback)
+                     } catch (e: Exception) { }
+                }
             }
         }
         
-        // Also handling seasons loading which used app.get in the original file? 
-        // Wait, FaselHD load() doesn't have the Season/recursion loop like EgyDead had.
-        // It has a simpler structure. Looks good.
+        // Run on main page
+        extractFromDoc(document)
+        
+        // If it's not a /watch url, and we found nothing (or even if we did, to be safe), check /watch
+        if (!data.endsWith("/watch")) {
+             val watchUrl = "$data/watch"
+             try {
+                // We use app.get directly here to avoid double-wrapping or just rely on getSafe
+                val watchDoc = getSafe(watchUrl).document
+                extractFromDoc(watchDoc)
+             } catch (e: Exception) {
+                 // The /watch page might not exist, ignore
+             }
+        }
 
         return true
     }
