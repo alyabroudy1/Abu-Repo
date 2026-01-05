@@ -208,7 +208,7 @@ class FaselHD : MainAPI() {
         // Process download link
         if (downloadUrl.isNotBlank()) {
             try {
-                val player = app.post(downloadUrl, interceptor = cfKiller, referer = mainUrl, timeout = 120).document
+                val player = app.get(downloadUrl, interceptor = cfKiller, referer = mainUrl, timeout = 120).document
                 val directLink = player.select("div.dl-link a").attr("href")
                 if (directLink.isNotBlank()) {
                     callback.invoke(
@@ -232,7 +232,7 @@ class FaselHD : MainAPI() {
         if (iframeUrl.isNotBlank()) {
             try {
                 val webView = WebViewResolver(
-                    Regex("""master\.m3u8""")
+                    Regex("""\.m3u8""")
                 ).resolveUsingWebView(
                     requestCreator("GET", iframeUrl, referer = mainUrl)
                 ).first
