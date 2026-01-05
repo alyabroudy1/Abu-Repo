@@ -17,21 +17,6 @@ class FaselHD : MainAPI() {
         TvType.AsianDrama
     )
 
-    private val headers = mapOf(
-        "User-Agent" to "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept" to "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Accept-Language" to "ar-SA,ar;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Referer" to "$mainUrl/",
-        "Origin" to mainUrl,
-        "Sec-Ch-Ua" to "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
-        "Sec-Ch-Ua-Mobile" to "?0",
-        "Sec-Ch-Ua-Platform" to "\"Windows\"",
-        "Sec-Fetch-Dest" to "document",
-        "Sec-Fetch-Mode" to "navigate",
-        "Sec-Fetch-Site" to "same-origin",
-        "Sec-Fetch-User" to "?1",
-        "Upgrade-Insecure-Requests" to "1"
-    )
 
     override val mainPage = mainPageOf(
         "$mainUrl/category/%d8%a7%d9%81%d9%84%d8%a7%d9%85/page/" to "أفلام",
@@ -40,31 +25,8 @@ class FaselHD : MainAPI() {
         "$mainUrl/category/%d8%a7%d8%b3%d9%8a%d9%88%d9%8a/page/" to "اسيوي"
     )
 
-    // Helper method to simulate the "ScraperInterceptor" logic:
-    // Retry on 403/503 with slight header modification or delay.
-    private suspend fun getSafe(url: String, headers: Map<String, String> = this.headers): com.lagradost.cloudstream3.NiceResponse {
-        return try {
-            val response = app.get(url, headers = headers)
-            // DEBUG: Print the first 1000 chars of the response to see if we are getting a valid page or a Block/Captcha page
-            // Use standard println which usually shows up in logcat under System.out or I/System.out
-            println("FASEL_DEBUG: URL: $url")
-            println("FASEL_DEBUG: HTML_START: ${response.text.take(1000)}")
-            response
-        } catch (e: Exception) {
-            // ... (rest of retry logic)
-            val newHeaders = headers.toMutableMap()
-            newHeaders["Cache-Control"] = "no-cache"
-            newHeaders["Pragma"] = "no-cache"
-            kotlinx.coroutines.delay(1000) 
-            val retryResponse = app.get(url, headers = newHeaders)
-            println("FASEL_DEBUG: RETRY_URL: $url")
-            println("FASEL_DEBUG: RETRY_HTML_START: ${retryResponse.text.take(1000)}")
-            retryResponse
-        }
-    }
-
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        val document = getSafe(request.data + page).document
+        val document = app.get(request.data + page).document
         val home = document.select(".postDiv, .box--item").mapNotNull { 
             it.toSearchResult() 
         }
@@ -106,14 +68,15 @@ class FaselHD : MainAPI() {
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val document = getSafe("$mainUrl/?s=$query").document
+        val document = app.get("$mainUrl/?s=$query").document
         return document.select(".movie, .card, article.item, .film-card, .search-result, .box--item").mapNotNull { 
             it.toSearchResult() 
         }
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        val document = getSafe(url).document
+        // Use default app.get which handles cookies/headers automatically often better than hardcoded ones
+        val document = app.get(url).document
 
         val title = document.selectFirst("h1.postTitle, h1.title, .post-title h1, .box--title")?.text()
             ?.substringBefore(" مترجم") ?: document.selectFirst("title")?.text()?.substringBefore(" مترجم") ?: return null
@@ -172,7 +135,7 @@ class FaselHD : MainAPI() {
         callback: (ExtractorLink) -> Unit
     ): Boolean {
         // Attempt to load from the main URL first, then try the /watch variant if needed or if main has no links
-        var document = getSafe(data).document
+        var document = app.get(data).document
         
         // Helper to run extraction on a document
         suspend fun extractFromDoc(doc: org.jsoup.nodes.Document) {
@@ -261,7 +224,7 @@ class FaselHD : MainAPI() {
              val watchUrl = "$data/watch"
              try {
                 // We use app.get directly here to avoid double-wrapping or just rely on getSafe
-                val watchDoc = getSafe(watchUrl).document
+                val watchDoc = app.get(watchUrl).document
                 extractFromDoc(watchDoc)
              } catch (e: Exception) {
                  // The /watch page might not exist, ignore
