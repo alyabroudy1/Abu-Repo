@@ -76,7 +76,8 @@ class FaselHD : MainAPI() {
 
     override suspend fun load(url: String): LoadResponse? {
         // Use default app.get which handles cookies/headers automatically often better than hardcoded ones
-        val document = app.get(url).document
+        val fixedUrl = url.replace("faselhd.cloud", "www.faselhd.center")
+        val document = app.get(fixedUrl).document
 
         val title = document.selectFirst("h1.postTitle, h1.title, .post-title h1, .box--title")?.text()
             ?.substringBefore(" مترجم") ?: document.selectFirst("title")?.text()?.substringBefore(" مترجم") ?: return null
@@ -135,8 +136,11 @@ class FaselHD : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
+        // Force rewrite legacy domain to new one
+        val fixedData = data.replace("faselhd.cloud", "www.faselhd.center")
+
         // Attempt to load from the main URL first, then try the /watch variant if needed or if main has no links
-        var document = app.get(data).document
+        var document = app.get(fixedData).document
         
         // Helper to run extraction on a document
         suspend fun extractFromDoc(doc: org.jsoup.nodes.Document) {
@@ -235,8 +239,8 @@ class FaselHD : MainAPI() {
         extractFromDoc(document)
         
         // If it's not a /watch url, and we found nothing (or even if we did, to be safe), check /watch
-        if (!data.endsWith("/watch")) {
-             val watchUrl = "$data/watch"
+        if (!fixedData.endsWith("/watch")) {
+             val watchUrl = "$fixedData/watch"
              try {
                 // We use app.get directly here to avoid double-wrapping or just rely on getSafe
                 val watchDoc = app.get(watchUrl).document
