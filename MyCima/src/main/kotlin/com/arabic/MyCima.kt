@@ -21,8 +21,31 @@ class MyCima : MainAPI() {
         "$mainUrl/category/arabic-series/page/" to "مسلسلات عربية"
     )
 
+    // Helper method to simulate the "ScraperInterceptor" logic:
+    // Retry on 403/503 with slight header modification or delay.
+    private suspend fun getSafe(url: String, headers: Map<String, String>? = null): com.lagradost.cloudstream3.NiceResponse {
+        return try {
+            app.get(url, headers = headers)
+        } catch (e: Exception) {
+            // Retry once with a "cache bust" or slight tweak
+            val newHeaders = (headers ?: emptyMap()).toMutableMap()
+            newHeaders["Cache-Control"] = "no-cache"
+            newHeaders["Pragma"] = "no-cache"
+            
+            // ReCaptcha placeholder: 
+            // If we detected a captcha keys here, we would use: 
+            // val token = ReCaptcha.getCaptchaToken(url, "SITE_KEY")
+            // newHeaders["Recaptcha-Token"] = token
+            
+            // Small delay to be "human-like"
+            kotlinx.coroutines.delay(1000) 
+            
+            app.get(url, headers = newHeaders)
+        }
+    }
+
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        val document = app.get(request.data + page).document
+        val document = getSafe(request.data + page).document
         val home = document.select(".post-item, .movie-item, article.item").mapNotNull { 
             it.toSearchResult() 
         }
@@ -78,14 +101,14 @@ class MyCima : MainAPI() {
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val document = app.get("$mainUrl/?s=$query").document
+        val document = getSafe("$mainUrl/?s=$query").document
         return document.select(".post-item, .movie-item, article.item, .search-result").mapNotNull { 
             it.toSearchResult() 
         }
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        val document = app.get(url).document
+        val document = getSafe(url).document
         
         val title = document.selectFirst("h1.title, h1, .post-title")?.text()?.trim()
             ?: return null
@@ -109,7 +132,7 @@ class MyCima : MainAPI() {
             
             if (seasonHref.isNotBlank()) {
                 try {
-                    val seasonDoc = app.get(seasonHref).document
+                    val seasonDoc = getSafe(seasonHref).document
                     seasonDoc.select(".episodes a, .episode-list a, a.episode").forEach { ep ->
                         val epHref = ep.attr("href")
                         val epTitle = ep.text().trim()
@@ -166,7 +189,7 @@ class MyCima : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        val document = app.get(data).document
+        val document = getSafe(data).document
         
         // Find server buttons/tabs
         document.select(".servers a, .server-list a, button[data-url], li[data-url]").forEach { server ->

@@ -22,8 +22,26 @@ class ArabSeed : MainAPI() {
         "$altUrl/latest/?page=" to "أحدث الإضافات"
     )
 
+    // Helper method to simulate the "ScraperInterceptor" logic:
+    // Retry on 403/503 with slight header modification or delay.
+    private suspend fun getSafe(url: String, headers: Map<String, String>? = null): com.lagradost.cloudstream3.NiceResponse {
+        return try {
+            app.get(url, headers = headers)
+        } catch (e: Exception) {
+            // Retry once with a "cache bust" or slight tweak
+            val newHeaders = (headers ?: emptyMap()).toMutableMap()
+            newHeaders["Cache-Control"] = "no-cache"
+            newHeaders["Pragma"] = "no-cache"
+            
+            // Small delay to be "human-like"
+            kotlinx.coroutines.delay(1000) 
+            
+            app.get(url, headers = newHeaders)
+        }
+    }
+
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        val document = app.get(request.data + page).document
+        val document = getSafe(request.data + page).document
         val home = document.select(".MovieBlock, .movie-item, article, .film-card").mapNotNull { 
             it.toSearchResult() 
         }
@@ -92,14 +110,14 @@ class ArabSeed : MainAPI() {
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val document = app.get("$altUrl/?s=$query").document
+        val document = getSafe("$altUrl/?s=$query").document
         return document.select(".MovieBlock, .movie-item, article, .film-card").mapNotNull { 
             it.toSearchResult() 
         }
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        val document = app.get(url).document
+        val document = getSafe(url).document
         
         val title = document.selectFirst("h1.Title, h1, .post-title, .movie-title")?.text()?.trim()
             ?: return null
@@ -123,7 +141,7 @@ class ArabSeed : MainAPI() {
             
             if (seasonHref.isNotBlank()) {
                 try {
-                    val seasonDoc = app.get(fixUrl(seasonHref)).document
+                    val seasonDoc = getSafe(fixUrl(seasonHref)).document
                     seasonDoc.select(".EpsList a, .episodes a, a.episode").forEach { ep ->
                         val epHref = ep.attr("href")
                         val epTitle = ep.text().trim()
@@ -180,7 +198,7 @@ class ArabSeed : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        val document = app.get(data).document
+        val document = getSafe(data).document
         
         // Find server tabs
         document.select(".WatchServers a, .serversList a, button[data-url], .servers a").forEach { server ->

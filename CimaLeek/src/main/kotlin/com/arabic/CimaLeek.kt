@@ -5,7 +5,7 @@ import com.lagradost.cloudstream3.utils.*
 import org.jsoup.nodes.Element
 
 class CimaLeek : MainAPI() {
-    override var mainUrl = "https://pro.cimaleek.to"
+    override var mainUrl = "https://cimaleek.to"
     override var name = "CimaLeek"
     override val hasMainPage = true
     override var lang = "ar"
@@ -25,8 +25,26 @@ class CimaLeek : MainAPI() {
         "$mainUrl/category/asian-series/?page=" to "مسلسلات آسيوية"
     )
 
+    // Helper method to simulate the "ScraperInterceptor" logic:
+    // Retry on 403/503 with slight header modification or delay.
+    private suspend fun getSafe(url: String, headers: Map<String, String>? = null): com.lagradost.cloudstream3.NiceResponse {
+        return try {
+            app.get(url, headers = headers)
+        } catch (e: Exception) {
+            // Retry once with a "cache bust" or slight tweak
+            val newHeaders = (headers ?: emptyMap()).toMutableMap()
+            newHeaders["Cache-Control"] = "no-cache"
+            newHeaders["Pragma"] = "no-cache"
+            
+            // Small delay to be "human-like"
+            kotlinx.coroutines.delay(1000) 
+            
+            app.get(url, headers = newHeaders)
+        }
+    }
+
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        val document = app.get(request.data + page).document
+        val document = getSafe(request.data + page).document
         val home = document.select(".MovieBlock, .movie-card, article").mapNotNull { 
             it.toSearchResult() 
         }
@@ -82,14 +100,14 @@ class CimaLeek : MainAPI() {
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val document = app.get("$mainUrl/?s=$query").document
+        val document = getSafe("$mainUrl/?s=$query").document
         return document.select(".MovieBlock, .movie-card, article").mapNotNull { 
             it.toSearchResult() 
         }
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        val document = app.get(url).document
+        val document = getSafe(url).document
         
         val title = document.selectFirst("h1.Title, h1.title, .post-title h1")?.text()?.trim()
             ?: document.selectFirst("h1")?.text()?.trim()
@@ -117,7 +135,7 @@ class CimaLeek : MainAPI() {
             
             if (seasonHref.isNotBlank()) {
                 try {
-                    val seasonDoc = app.get(seasonHref).document
+                    val seasonDoc = getSafe(seasonHref).document
                     seasonDoc.select(".episodes-list a, .EpsList a, a.episode").forEach { ep ->
                         val epHref = ep.attr("href")
                         val epTitle = ep.text().trim()
@@ -176,7 +194,7 @@ class CimaLeek : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        val document = app.get(data).document
+        val document = getSafe(data).document
         
         // Find server tabs/buttons
         document.select(".servers a, .serversList li, li[data-url], button[data-url]").forEach { server ->
