@@ -147,9 +147,7 @@ class FaselHD : MainAPI() {
         // Helper to run extraction on a document
         suspend fun extractFromDoc(doc: org.jsoup.nodes.Document) {
              if (doc.title().contains("Just a moment", ignoreCase = true)) {
-                 // Warning: This means Cloudflare might be blocking us and CloudStream's auto-bypass didn't work.
-                 // We can't do much here without a WebView, but logging/throwing might help the user understand.
-                 // For now, we continue hoping regex matches something, but it likely won't.
+                 throw ErrorLoadingException("Cloudflare Challenge detected. Please use 'Open in WebView' or wait for the app to bypass it.")
              }
 
              // 1. Broad Iframe Search
