@@ -90,6 +90,7 @@ class FaselHD : MainAPI() {
             }
     }
 
+    override suspend fun load(url: String): LoadResponse {
         val fixedUrl = url
             .replace("faselhd.cloud", "faselhds.biz")
             .replace("faselhd.center", "faselhds.biz")
@@ -187,6 +188,7 @@ class FaselHD : MainAPI() {
         isCasting: Boolean,
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
+    ): Boolean {
         val fixedData = data
             .replace("faselhd.cloud", "faselhds.biz")
             .replace("faselhd.center", "faselhds.biz")
