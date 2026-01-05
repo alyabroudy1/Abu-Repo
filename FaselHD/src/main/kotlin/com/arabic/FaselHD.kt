@@ -9,8 +9,8 @@ import com.lagradost.nicehttp.requestCreator
 import org.jsoup.nodes.Element
 
 class FaselHD : MainAPI() {
-    override var mainUrl = "https://faselhd.club"
-    private val alternativeUrl = "https://www.faselhd.club"
+    override var mainUrl = "https://www.faselhds.biz"
+    private val alternativeUrl = "https://faselhd.club"
     override var name = "FaselHD"
     override val hasMainPage = true
     override var lang = "ar"
@@ -90,11 +90,10 @@ class FaselHD : MainAPI() {
             }
     }
 
-    override suspend fun load(url: String): LoadResponse {
         val fixedUrl = url
-            .replace("faselhd.cloud", "faselhd.club")
-            .replace("faselhd.center", "faselhd.club")
-            .replace("faselhds.biz", "faselhd.club")
+            .replace("faselhd.cloud", "faselhds.biz")
+            .replace("faselhd.center", "faselhds.biz")
+            .replace("faselhd.club", "faselhds.biz")
         
         var doc = app.get(fixedUrl).document
         if (doc.select("title").text() == "Just a moment...") {
@@ -188,11 +187,10 @@ class FaselHD : MainAPI() {
         isCasting: Boolean,
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
-    ): Boolean {
         val fixedData = data
-            .replace("faselhd.cloud", "faselhd.club")
-            .replace("faselhd.center", "faselhd.club")
-            .replace("faselhds.biz", "faselhd.club")
+            .replace("faselhd.cloud", "faselhds.biz")
+            .replace("faselhd.center", "faselhds.biz")
+            .replace("faselhd.club", "faselhds.biz")
 
         var doc = app.get(fixedData).document
         if (doc.select("title").text() == "Just a moment...") {
