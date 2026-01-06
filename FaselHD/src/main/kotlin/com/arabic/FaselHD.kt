@@ -92,15 +92,10 @@ class FaselHD : MainAPI() {
             }
     }
 
-    override suspend fun load(url: String): LoadResponse {
-        val fixedUrl = url
-            .replace("faselhd.cloud", "faselhds.biz")
-            .replace("faselhd.center", "faselhds.biz")
-            .replace("faselhd.club", "faselhds.biz")
-        
-        var doc = app.get(fixedUrl).document
+    override suspend fun load(url   : String): LoadResponse {
+        var doc = app.get(url).document
         if (doc.select("title").text() == "Just a moment...") {
-            doc = app.get(fixedUrl, interceptor = cfKiller, timeout = 120).document
+            doc = app.get(url, interceptor = cfKiller, timeout = 120).document
         }
         
         val isMovie = doc.select("div.epAll").isEmpty()
@@ -194,99 +189,64 @@ class FaselHD : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        val fixedData = data
-            .replace("faselhd.cloud", "faselhds.biz")
-            .replace("faselhd.center", "faselhds.biz")
-            .replace("faselhd.club", "faselhds.biz")
-
-        var doc = app.get(fixedData).document
+        var doc = app.get(data).document
         if (doc.select("title").text() == "Just a moment...") {
-            doc = app.get(fixedData, interceptor = cfKiller).document
+            doc = app.get(data, interceptor = cfKiller).document
         }
 
-        // Method 1: Try to get download link
-        val downloadUrl = doc.select(".downloadLinks a").attr("href")
-        
-        // Method 2: Get iframe URL for WebView resolution
-        val iframeUrl = doc.select("iframe[name=\"player_iframe\"]").attr("src")
-
-        // Process download link
-        if (downloadUrl.isNotBlank()) {
-            try {
-                val player = app.get(downloadUrl, interceptor = cfKiller, referer = mainUrl, timeout = 120).document
-                val directLink = player.select("div.dl-link a").attr("href")
-                if (directLink.isNotBlank()) {
-                    callback.invoke(
-                        newExtractorLink(
-                            source = this.name,
-                            name = "$name Download Source",
-                            url = directLink,
-                            type = ExtractorLinkType.VIDEO
-                        ) {
-                            this.referer = mainUrl
-                            this.quality = Qualities.Unknown.value
+        coroutineScope {
+            listOf(
+                doc.select(".downloadLinks a").attr("href") to "download",
+                doc.select("iframe[name=\"player_iframe\"]").attr("src") to "iframe"
+            ).map { (url, method) ->
+                async {
+                    if (url.isNotBlank()) {
+                        try {
+                            if (method == "download") {
+                                val player = app.post(
+                                    url,
+                                    interceptor = cfKiller,
+                                    referer = mainUrl,
+                                    timeout = 120
+                                ).document
+                                val directLink = player.select("div.dl-link a").attr("href")
+                                if (directLink.isNotBlank()) {
+                                    callback.invoke(
+                                        newExtractorLink(
+                                            source = this@FaselHD.name,
+                                            name = "${this@FaselHD.name} Download Source",
+                                            url = directLink,
+                                            type = ExtractorLinkType.VIDEO
+                                        ) {
+                                            this.referer = this@FaselHD.mainUrl
+                                            this.quality = Qualities.Unknown.value
+                                        }
+                                    )
+                                }
+                            } else if (method == "iframe") {
+                                val webView = WebViewResolver(
+                                    Regex("""master\.m3u8""")
+                                ).resolveUsingWebView(
+                                    requestCreator(
+                                        "GET", url, referer = mainUrl
+                                    )
+                                ).first
+                                
+                                if (webView?.url != null) {
+                                    M3u8Helper.generateM3u8(
+                                        this@FaselHD.name,
+                                        webView.url.toString(),
+                                        referer = mainUrl
+                                    ).toList().forEach(callback)
+                                }
+                            }
+                        } catch (e: Exception) {
+                            // Ignore errors
                         }
-                    )
+                    }
                 }
-            } catch (e: Exception) {
-                // Download method failed, continue to iframe method
-            }
+            }.awaitAll()
         }
-
-        // Process iframe with WebViewResolver - This bypasses ad redirects!
-        if (iframeUrl.isNotBlank()) {
-            try {
-                val webView = WebViewResolver(
-                    Regex("""\.m3u8""")
-                ).resolveUsingWebView(
-                    requestCreator("GET", iframeUrl, referer = mainUrl)
-                ).first
-
-                if (webView?.url != null) {
-                    M3u8Helper.generateM3u8(
-                        this.name,
-                        webView.url.toString(),
-                        referer = mainUrl
-                    ).toList().forEach(callback)
-                }
-            } catch (e: Exception) {
-                // WebView method failed
-            }
-        }
-
-        // Fallback: Try to find m3u8/mp4 links directly in page scripts
-        val html = doc.html()
-        
-        // Find m3u8 URLs
-        Regex("""["'](https?://[^"']*\.m3u8[^"']*)["']""").findAll(html).forEach { match ->
-            val url = match.groupValues[1]
-            try {
-                M3u8Helper.generateM3u8(
-                    this.name,
-                    url,
-                    referer = mainUrl
-                ).toList().forEach(callback)
-            } catch (e: Exception) {
-                // M3u8 generation failed for this URL
-            }
-        }
-
-        // Find mp4 URLs
-        Regex("""["'](https?://[^"']*\.mp4[^"']*)["']""").findAll(html).forEach { match ->
-            val url = match.groupValues[1]
-            callback.invoke(
-                newExtractorLink(
-                    source = this.name,
-                    name = "$name - MP4",
-                    url = url,
-                    type = ExtractorLinkType.VIDEO
-                ) {
-                    this.referer = mainUrl
-                    this.quality = Qualities.Unknown.value
-                }
-            )
-        }
-
         return true
     }
 }
