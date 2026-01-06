@@ -1,127 +1,13 @@
-﻿[
-    {
-        "internalName": "FaselHD",
-        "name": "FaselHD",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/FaselHD.cs3",
-        "version": 12,
-        "apiVersion": 1,
-        "status": 1,
-        "fileSize": 12878,
-        "description": "مشاهدة الافلام والمسلسلات - FaselHD",
-        "authors": [
-            "AbuRepo"
-        ],
-        "language": "ar",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Anime",
-            "AsianDrama"
-        ],
-        "iconUrl": "https://faselhd.cloud/wp-content/uploads/2022/02/favicon.png",
-        "repositoryUrl": "https://github.com/alyabroudy1/Abu-Repo"
-    },
-    {
-        "internalName": "MyCima",
-        "name": "MyCima",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/MyCima.cs3",
-        "version": 6,
-        "apiVersion": 1,
-        "status": 1,
-        "fileSize": 16641,
-        "description": "ماي سيما - مشاهدة أحدث الأفلام والمسلسلات",
-        "authors": [
-            "AbuRepo"
-        ],
-        "language": "ar",
-        "tvTypes": [
-            "Movie",
-            "TvSeries"
-        ],
-        "iconUrl": "https://my-cima.video/favicon.ico",
-        "repositoryUrl": "https://github.com/alyabroudy1/Abu-Repo"
-    },
-    {
-        "internalName": "CimaLeek",
-        "name": "CimaLeek",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/CimaLeek.cs3",
-        "version": 6,
-        "apiVersion": 1,
-        "status": 1,
-        "fileSize": 17471,
-        "description": "مشاهدة افلام ومسلسلات - CimaLeek",
-        "authors": [
-            "AbuRepo"
-        ],
-        "language": "ar",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Anime",
-            "AsianDrama"
-        ],
-        "iconUrl": "https://cimalek.art/favicon.ico",
-        "repositoryUrl": "https://github.com/alyabroudy1/Abu-Repo"
-    },
-    {
-        "internalName": "EgyBest",
-        "name": "EgyBest",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/EgyBest.cs3",
-        "version": 6,
-        "apiVersion": 1,
-        "status": 1,
-        "fileSize": 17967,
-        "description": "ايجي بست - مشاهدة أفلام ومسلسلات",
-        "authors": [
-            "AbuRepo"
-        ],
-        "language": "ar",
-        "tvTypes": [
-            "Movie",
-            "TvSeries"
-        ],
-        "iconUrl": "https://egybest.la/favicon.ico",
-        "repositoryUrl": "https://github.com/alyabroudy1/Abu-Repo"
-    },
-    {
-        "internalName": "EgyDead",
-        "name": "EgyDead",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/EgyDead.cs3",
-        "version": 6,
-        "apiVersion": 1,
-        "status": 1,
-        "fileSize": 15877,
-        "description": "مشاهدة افلام و مسلسلات و انمي - EgyDead",
-        "authors": [
-            "AbuRepo"
-        ],
-        "language": "ar",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Anime"
-        ],
-        "iconUrl": "https://egydead.skin/wp-content/uploads/2023/05/cropped-favicon-270x270.png",
-        "repositoryUrl": "https://github.com/alyabroudy1/Abu-Repo"
-    },
-    {
-        "internalName": "ArabSeed",
-        "name": "ArabSeed",
-        "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/ArabSeed.cs3",
-        "version": 5,
-        "apiVersion": 1,
-        "status": 1,
-        "fileSize": 16962,
-        "description": "عرب سيد - مشاهدة أفلام ومسلسلات",
-        "authors": [
-            "AbuRepo"
-        ],
-        "language": "ar",
-        "tvTypes": [
-            "Movie",
-            "TvSeries"
-        ],
-        "iconUrl": "https://a.asd.homes/favicon.ico",
-        "repositoryUrl": "https://github.com/alyabroudy1/Abu-Repo"
-    }
+[
+{"name": "ArabSeed", "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/ArabSeed.cs3"}
+,
+{"name": "CimaLeek", "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/CimaLeek.cs3"}
+,
+{"name": "EgyBest", "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/EgyBest.cs3"}
+,
+{"name": "EgyDead", "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/EgyDead.cs3"}
+,
+{"name": "FaselHD", "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/FaselHD.cs3"}
+,
+{"name": "MyCima", "url": "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/MyCima.cs3"}
 ]
