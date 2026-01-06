@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: "src"
+          fetch-depth: 0
 
       - name: Checkout builds
         uses: actions/checkout@v4
@@ -49,21 +50,9 @@ jobs:
 
       - name: Generate plugins.json
         run: |
-          cd $GITHUB_WORKSPACE/builds
-          echo '[' > plugins.json
-          first=true
-          for file in *.cs3; do
-            if [ "$file" != "*.cs3" ]; then
-              if [ "$first" = true ]; then
-                first=false
-              else
-                echo ',' >> plugins.json
-              fi
-              name="${file%.cs3}"
-              echo "{\"name\": \"$name\", \"url\": \"https://raw.githubusercontent.com/${{ github.repository }}/builds/$file\"}" >> plugins.json
-            fi
-          done
-          echo ']' >> plugins.json
+          cd $GITHUB_WORKSPACE/src
+          ./gradlew makePluginsJson
+          cp plugins.json $GITHUB_WORKSPACE/builds/
 
       - name: Push builds
         run: |
