@@ -4,7 +4,7 @@ import com.android.build.gradle.BaseExtension
 buildscript {
     repositories {
         google()
-        maven("https://repo1.maven.org/maven2/")
+        mavenCentral()
         maven("https://jitpack.io")
     }
 
