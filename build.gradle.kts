@@ -4,14 +4,14 @@ import com.android.build.gradle.BaseExtension
 buildscript {
     repositories {
         google()
-        mavenCentral()
+        maven("https://repo1.maven.org/maven2/")
         maven("https://jitpack.io")
     }
 
     dependencies {
         classpath("com.android.tools.build:gradle:8.7.3")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0")
-        classpath("com.github.recloudstream:gradle:-SNAPSHOT")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.0")
+        classpath("com.github.recloudstream:gradle:cce1b8d8")
     }
 }
 
@@ -46,7 +46,8 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
                 freeCompilerArgs.addAll(
                     "-Xno-call-assertions",
                     "-Xno-param-assertions",
-                    "-Xno-receiver-assertions"
+                    "-Xno-receiver-assertions",
+                    "-Xskip-metadata-version-check"
                 )
             }
         }
