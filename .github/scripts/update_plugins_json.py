@@ -9,7 +9,7 @@ def update_plugins_json(builds_dir, repo_url):
         print(f"Error: {plugins_json_path} not found")
         sys.exit(1)
 
-    with open(plugins_json_path, 'r', encoding='utf-8') as f:
+    with open(plugins_json_path, 'r', encoding='utf-8-sig') as f:
         plugins = json.load(f)
 
     updated_plugins = []
