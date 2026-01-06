@@ -47,12 +47,20 @@ jobs:
           mkdir -p $GITHUB_WORKSPACE/builds
           cd $GITHUB_WORKSPACE/src
           find . -name "*.cs3" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
+          # Copy jars - Assuming full.jar is the one we want. Flatten structure.
+          find . -path "*/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" | while read file; do
+              # Extract module name from path (e.g. ./ArabSeed/...)
+              module=$(echo "$file" | cut -d/ -f2)
+              cp "$file" "$GITHUB_WORKSPACE/builds/${module}.jar"
+          done
 
       - name: Generate plugins.json
         run: |
           cd $GITHUB_WORKSPACE/src
           ./gradlew makePluginsJson
           cp plugins.json $GITHUB_WORKSPACE/builds/
+          # Run python script to update plugins.json with JAR info
+          python3 .github/scripts/update_plugins_json.py $GITHUB_WORKSPACE/builds "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds"
 
       - name: Push builds
         run: |
