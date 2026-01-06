@@ -69,6 +69,8 @@ subprojects {
         implementation("com.fasterxml.jackson.core:jackson-databind:2.18.2")
 
         apk("com.lagradost:cloudstream3:pre-release")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
     }
 }
 

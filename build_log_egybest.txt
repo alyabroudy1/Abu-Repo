@@ -1,0 +1,91 @@
+> Task :EgyBest:preBuild UP-TO-DATE
+> Task :EgyBest:preDebugBuild UP-TO-DATE
+> Task :EgyBest:mergeDebugJniLibFolders UP-TO-DATE
+> Task :EgyBest:mergeDebugNativeLibs NO-SOURCE
+> Task :EgyBest:stripDebugDebugSymbols NO-SOURCE
+> Task :EgyBest:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :EgyBest:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :EgyBest:generateDebugResValues UP-TO-DATE
+> Task :EgyBest:generateDebugResources UP-TO-DATE
+> Task :EgyBest:packageDebugResources UP-TO-DATE
+> Task :EgyBest:parseDebugLocalResources UP-TO-DATE
+> Task :EgyBest:generateDebugRFile UP-TO-DATE
+> Task :EgyBest:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :EgyBest:javaPreCompileDebug UP-TO-DATE
+> Task :EgyBest:mergeDebugShaders UP-TO-DATE
+> Task :EgyBest:compileDebugShaders NO-SOURCE
+> Task :EgyBest:generateDebugAssets UP-TO-DATE
+> Task :EgyBest:packageDebugAssets UP-TO-DATE
+> Task :EgyBest:prepareDebugArtProfile UP-TO-DATE
+> Task :EgyBest:prepareLintJarForPublish UP-TO-DATE
+> Task :EgyBest:processDebugManifest UP-TO-DATE
+> Task :EgyBest:writeDebugAarMetadata UP-TO-DATE
+
+> Task :EgyBest:compileDebugKotlin FAILED
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:26:112 Unresolved reference 'NiceResponse'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:28:36 Argument type mismatch: actual type is 'kotlin.collections.Map<kotlin.String, kotlin.String>?', but 'kotlin.collections.Map<kotlin.String, kotlin.String>' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:41:13 Unresolved reference 'kotlinx'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:48:53 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:50:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:109:54 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:111:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:116:37 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:121:103 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:121:109 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:122:17 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:122:34 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:122:48 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:128:87 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:129:84 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:129:88 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:137:92 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:138:37 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:139:57 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:143:37 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:143:57 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:144:91 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:145:41 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:146:42 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:165:90 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:166:33 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:167:34 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:204:38 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:207:101 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:208:36 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:208:53 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:209:24 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:209:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:210:28 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:214:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:219:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:220:30 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:220:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:220:59 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:222:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:227:91 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:228:28 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:231:24 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:232:24 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:233:24 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:237:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:239:46 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:251:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:252:37 Unresolved reference 'data'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:257:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:278:21 Suspension functions can only be called within coroutine body.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':EgyBest:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1s
+16 actionable tasks: 1 executed, 15 up-to-date

@@ -1,0 +1,427 @@
+> Task :ArabSeed:preBuild UP-TO-DATE
+> Task :ArabSeed:preDebugBuild UP-TO-DATE
+> Task :ArabSeed:mergeDebugJniLibFolders UP-TO-DATE
+> Task :ArabSeed:mergeDebugNativeLibs NO-SOURCE
+> Task :ArabSeed:stripDebugDebugSymbols NO-SOURCE
+> Task :ArabSeed:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :ArabSeed:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :ArabSeed:generateDebugResValues UP-TO-DATE
+> Task :ArabSeed:generateDebugResources UP-TO-DATE
+> Task :ArabSeed:packageDebugResources UP-TO-DATE
+> Task :ArabSeed:parseDebugLocalResources UP-TO-DATE
+> Task :ArabSeed:generateDebugRFile UP-TO-DATE
+> Task :ArabSeed:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :ArabSeed:javaPreCompileDebug UP-TO-DATE
+> Task :ArabSeed:mergeDebugShaders UP-TO-DATE
+> Task :ArabSeed:compileDebugShaders NO-SOURCE
+> Task :ArabSeed:generateDebugAssets UP-TO-DATE
+> Task :ArabSeed:packageDebugAssets UP-TO-DATE
+> Task :ArabSeed:prepareDebugArtProfile UP-TO-DATE
+> Task :ArabSeed:prepareLintJarForPublish UP-TO-DATE
+> Task :ArabSeed:processDebugManifest UP-TO-DATE
+> Task :ArabSeed:writeDebugAarMetadata UP-TO-DATE
+> Task :CimaLeek:preBuild UP-TO-DATE
+> Task :CimaLeek:preDebugBuild UP-TO-DATE
+> Task :CimaLeek:mergeDebugJniLibFolders UP-TO-DATE
+> Task :CimaLeek:mergeDebugNativeLibs NO-SOURCE
+> Task :CimaLeek:stripDebugDebugSymbols NO-SOURCE
+> Task :CimaLeek:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :CimaLeek:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :CimaLeek:generateDebugResValues UP-TO-DATE
+> Task :CimaLeek:generateDebugResources UP-TO-DATE
+> Task :CimaLeek:packageDebugResources UP-TO-DATE
+> Task :CimaLeek:parseDebugLocalResources UP-TO-DATE
+> Task :CimaLeek:generateDebugRFile UP-TO-DATE
+> Task :CimaLeek:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :CimaLeek:javaPreCompileDebug UP-TO-DATE
+> Task :CimaLeek:mergeDebugShaders UP-TO-DATE
+> Task :CimaLeek:compileDebugShaders NO-SOURCE
+> Task :CimaLeek:generateDebugAssets UP-TO-DATE
+> Task :CimaLeek:packageDebugAssets UP-TO-DATE
+> Task :CimaLeek:prepareDebugArtProfile UP-TO-DATE
+> Task :CimaLeek:prepareLintJarForPublish UP-TO-DATE
+> Task :CimaLeek:processDebugManifest UP-TO-DATE
+> Task :CimaLeek:writeDebugAarMetadata UP-TO-DATE
+> Task :EgyBest:preBuild UP-TO-DATE
+> Task :EgyBest:preDebugBuild UP-TO-DATE
+> Task :EgyBest:mergeDebugJniLibFolders UP-TO-DATE
+> Task :EgyBest:mergeDebugNativeLibs NO-SOURCE
+> Task :EgyBest:stripDebugDebugSymbols NO-SOURCE
+> Task :EgyBest:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :EgyBest:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :EgyBest:generateDebugResValues UP-TO-DATE
+> Task :EgyBest:generateDebugResources UP-TO-DATE
+> Task :EgyBest:packageDebugResources UP-TO-DATE
+> Task :EgyBest:parseDebugLocalResources UP-TO-DATE
+> Task :EgyBest:generateDebugRFile UP-TO-DATE
+> Task :EgyBest:compileDebugKotlin UP-TO-DATE
+> Task :EgyBest:extractDebugAnnotations UP-TO-DATE
+> Task :EgyBest:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :EgyBest:javaPreCompileDebug UP-TO-DATE
+> Task :EgyBest:compileDebugJavaWithJavac NO-SOURCE
+> Task :EgyBest:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :EgyBest:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :EgyBest:mergeDebugShaders UP-TO-DATE
+> Task :EgyBest:compileDebugShaders NO-SOURCE
+> Task :EgyBest:generateDebugAssets UP-TO-DATE
+> Task :EgyBest:packageDebugAssets UP-TO-DATE
+> Task :EgyBest:prepareDebugArtProfile UP-TO-DATE
+> Task :EgyBest:prepareLintJarForPublish UP-TO-DATE
+> Task :EgyBest:processDebugManifest UP-TO-DATE
+> Task :EgyBest:processDebugJavaRes UP-TO-DATE
+> Task :EgyBest:mergeDebugJavaResource UP-TO-DATE
+> Task :EgyBest:syncDebugLibJars UP-TO-DATE
+> Task :EgyBest:writeDebugAarMetadata UP-TO-DATE
+> Task :EgyBest:bundleDebugAar UP-TO-DATE
+> Task :EgyBest:assembleDebug UP-TO-DATE
+> Task :EgyDead:preBuild UP-TO-DATE
+> Task :EgyDead:preDebugBuild UP-TO-DATE
+> Task :EgyDead:mergeDebugJniLibFolders UP-TO-DATE
+> Task :EgyDead:mergeDebugNativeLibs NO-SOURCE
+> Task :EgyDead:stripDebugDebugSymbols NO-SOURCE
+> Task :EgyDead:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :EgyDead:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :EgyDead:generateDebugResValues UP-TO-DATE
+> Task :EgyDead:generateDebugResources UP-TO-DATE
+> Task :EgyDead:packageDebugResources UP-TO-DATE
+> Task :EgyDead:parseDebugLocalResources UP-TO-DATE
+> Task :EgyDead:generateDebugRFile UP-TO-DATE
+> Task :EgyDead:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :EgyDead:javaPreCompileDebug UP-TO-DATE
+> Task :EgyDead:mergeDebugShaders UP-TO-DATE
+> Task :EgyDead:compileDebugShaders NO-SOURCE
+> Task :EgyDead:generateDebugAssets UP-TO-DATE
+> Task :EgyDead:packageDebugAssets UP-TO-DATE
+> Task :EgyDead:prepareDebugArtProfile UP-TO-DATE
+> Task :EgyDead:prepareLintJarForPublish UP-TO-DATE
+> Task :EgyDead:processDebugManifest UP-TO-DATE
+> Task :EgyDead:writeDebugAarMetadata UP-TO-DATE
+> Task :FaselHD:preBuild UP-TO-DATE
+> Task :FaselHD:preDebugBuild UP-TO-DATE
+> Task :FaselHD:mergeDebugJniLibFolders UP-TO-DATE
+> Task :FaselHD:mergeDebugNativeLibs NO-SOURCE
+> Task :FaselHD:stripDebugDebugSymbols NO-SOURCE
+> Task :FaselHD:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :FaselHD:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :FaselHD:generateDebugResValues UP-TO-DATE
+> Task :FaselHD:generateDebugResources UP-TO-DATE
+> Task :FaselHD:packageDebugResources UP-TO-DATE
+> Task :FaselHD:parseDebugLocalResources UP-TO-DATE
+> Task :FaselHD:generateDebugRFile UP-TO-DATE
+> Task :FaselHD:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :FaselHD:javaPreCompileDebug UP-TO-DATE
+> Task :FaselHD:mergeDebugShaders UP-TO-DATE
+> Task :FaselHD:compileDebugShaders NO-SOURCE
+> Task :FaselHD:generateDebugAssets UP-TO-DATE
+> Task :FaselHD:packageDebugAssets UP-TO-DATE
+> Task :FaselHD:prepareDebugArtProfile UP-TO-DATE
+> Task :FaselHD:prepareLintJarForPublish UP-TO-DATE
+> Task :FaselHD:processDebugManifest UP-TO-DATE
+> Task :FaselHD:writeDebugAarMetadata UP-TO-DATE
+> Task :MyCima:preBuild UP-TO-DATE
+> Task :MyCima:preDebugBuild UP-TO-DATE
+> Task :MyCima:mergeDebugJniLibFolders UP-TO-DATE
+> Task :MyCima:mergeDebugNativeLibs NO-SOURCE
+> Task :MyCima:stripDebugDebugSymbols NO-SOURCE
+> Task :MyCima:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :MyCima:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :MyCima:generateDebugResValues UP-TO-DATE
+> Task :MyCima:generateDebugResources UP-TO-DATE
+> Task :MyCima:packageDebugResources UP-TO-DATE
+> Task :MyCima:parseDebugLocalResources UP-TO-DATE
+> Task :MyCima:generateDebugRFile UP-TO-DATE
+> Task :MyCima:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :MyCima:javaPreCompileDebug UP-TO-DATE
+> Task :MyCima:mergeDebugShaders UP-TO-DATE
+> Task :MyCima:compileDebugShaders NO-SOURCE
+> Task :MyCima:generateDebugAssets UP-TO-DATE
+> Task :MyCima:packageDebugAssets UP-TO-DATE
+> Task :MyCima:prepareDebugArtProfile UP-TO-DATE
+> Task :MyCima:prepareLintJarForPublish UP-TO-DATE
+> Task :MyCima:processDebugManifest UP-TO-DATE
+> Task :MyCima:writeDebugAarMetadata UP-TO-DATE
+
+> Task :ArabSeed:compileDebugKotlin FAILED
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:27:112 Unresolved reference 'NiceResponse'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:29:36 Argument type mismatch: actual type is 'kotlin.collections.Map<kotlin.String, kotlin.String>?', but 'kotlin.collections.Map<kotlin.String, kotlin.String>' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:44:53 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:46:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:113:53 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:115:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:120:37 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:125:90 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:125:96 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:126:20 Argument type mismatch: actual type is 'C', but 'kotlin.String' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:126:24 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:126:41 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:126:55 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:132:74 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:138:75 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:139:37 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:140:57 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:144:37 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:144:65 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:145:86 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:146:41 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:147:42 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:165:77 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:166:33 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:167:34 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:201:38 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:204:100 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:205:36 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:205:53 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:206:24 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:206:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:207:28 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:211:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:216:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:217:30 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:217:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:217:59 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:219:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:224:59 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:225:30 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:228:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:241:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:242:37 Unresolved reference 'data'.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:246:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/ArabSeed/src/main/kotlin/com/arabic/ArabSeed.kt:259:21 Suspension functions can only be called within coroutine body.
+
+> Task :CimaLeek:compileDebugKotlin FAILED
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:30:112 Unresolved reference 'NiceResponse'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:32:36 Argument type mismatch: actual type is 'kotlin.collections.Map<kotlin.String, kotlin.String>?', but 'kotlin.collections.Map<kotlin.String, kotlin.String>' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:47:53 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:49:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:103:54 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:105:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:110:37 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:116:84 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:116:90 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:117:17 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:117:34 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:117:48 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:123:78 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:124:77 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:124:81 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:132:76 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:133:37 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:134:57 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:138:37 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:138:57 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:139:91 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:140:41 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:141:42 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:144:61 Argument type mismatch: actual type is 'kotlin.Function0<kotlin.Unit>', but 'kotlin.Boolean' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:146:38 Unresolved reference 'season'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:147:38 Unresolved reference 'episode'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:159:82 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:160:33 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:161:34 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:164:53 Argument type mismatch: actual type is 'kotlin.Function0<kotlin.Unit>', but 'kotlin.Boolean' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:166:30 Unresolved reference 'episode'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:197:38 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:200:98 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:201:36 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:201:53 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:202:24 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:202:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:203:28 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:207:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:212:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:213:30 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:213:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:213:59 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:215:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:220:59 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:221:30 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:231:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:245:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:246:37 Unresolved reference 'data'.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:251:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/CimaLeek/src/main/kotlin/com/arabic/CimaLeek.kt:272:21 Suspension functions can only be called within coroutine body.
+
+> Task :EgyDead:compileDebugKotlin FAILED
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:32:119 Unresolved reference 'NiceResponse'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:52:72 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:54:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:100:73 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:102:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:107:56 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:112:84 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:112:88 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:113:16 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:113:33 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:113:46 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:118:68 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:124:78 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:125:29 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:126:30 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:129:49 Argument type mismatch: actual type is 'kotlin.Function0<kotlin.Unit>', but 'kotlin.Boolean' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:131:26 Unresolved reference 'episode'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:137:66 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:138:37 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:140:33 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:140:72 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:141:61 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:142:87 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:143:37 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:144:38 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:147:57 Argument type mismatch: actual type is 'kotlin.Function0<kotlin.Unit>', but 'kotlin.Boolean' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:149:34 Unresolved reference 'season'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:150:34 Unresolved reference 'episode'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:180:57 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:183:97 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:184:36 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:184:54 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:185:24 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:185:37 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:185:54 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:188:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:193:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:194:30 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:194:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:194:59 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:196:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:201:81 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:202:28 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:205:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:207:46 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:218:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:219:37 Unresolved reference 'data'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:224:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyDead/src/main/kotlin/com/arabic/EgyDead.kt:238:21 Suspension functions can only be called within coroutine body.
+
+> Task :FaselHD:compileDebugKotlin FAILED
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:52:16 'constructor(name: String, url: String, apiName: String, type: TvType?, posterUrl: String?, year: Int? = ..., id: Int? = ..., quality: SearchQuality? = ..., posterHeaders: Map<String, String>? = ...): MovieSearchResponse' is deprecated. Use newMovieSearchResponse.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:143:21 'constructor(data: String, name: String? = ..., season: Int? = ..., episode: Int? = ..., posterUrl: String? = ..., score: Score? = ..., description: String? = ..., date: Long? = ..., runTime: Int? = ...): Episode' is deprecated. Use newEpisode method.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:152:33 'fun <A, B> List<A>.apmap(f: suspend (A) -> B): List<B>' is deprecated. This blocks with runBlocking, and should not be used inside a suspended context.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:160:29 'constructor(data: String, name: String? = ..., season: Int? = ..., episode: Int? = ..., posterUrl: String? = ..., score: Score? = ..., description: String? = ..., date: Long? = ..., runTime: Int? = ...): Episode' is deprecated. Use newEpisode method.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:220:29 No parameter with name 'quality' found.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:278:21 No parameter with name 'quality' found.
+
+> Task :MyCima:compileDebugKotlin FAILED
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:26:112 Unresolved reference 'NiceResponse'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:28:36 Argument type mismatch: actual type is 'kotlin.collections.Map<kotlin.String, kotlin.String>?', but 'kotlin.collections.Map<kotlin.String, kotlin.String>' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:48:53 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:50:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:104:54 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:106:13 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:111:37 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:116:87 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:116:93 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:117:17 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:117:34 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:117:48 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:123:74 Unresolved reference 'it'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:129:75 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:130:37 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:131:57 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:135:37 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:135:57 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:136:91 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:137:41 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:138:42 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:141:61 Argument type mismatch: actual type is 'kotlin.Function0<kotlin.Unit>', but 'kotlin.Boolean' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:143:38 Unresolved reference 'season'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:144:38 Unresolved reference 'episode'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:156:82 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:157:33 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:158:34 Unresolved reference 'text'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:161:53 Argument type mismatch: actual type is 'kotlin.Function0<kotlin.Unit>', but 'kotlin.Boolean' was expected.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:163:30 Unresolved reference 'episode'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:192:38 Unresolved reference 'document'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:195:97 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:196:36 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:196:53 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:197:24 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:197:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:198:28 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:202:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:207:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:208:30 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:208:42 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:208:59 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:210:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:215:59 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:216:30 Unresolved reference 'attr'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:219:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:232:45 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:233:37 Unresolved reference 'data'.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:237:21 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/abu-o/Abu%20Repo/MyCima/src/main/kotlin/com/arabic/MyCima.kt:250:21 Suspension functions can only be called within coroutine body.
+
+FAILURE: Build completed with 5 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':ArabSeed:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':CimaLeek:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+3: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':EgyDead:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+4: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':FaselHD:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+5: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':MyCima:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+BUILD FAILED in 1s
+103 actionable tasks: 5 executed, 98 up-to-date

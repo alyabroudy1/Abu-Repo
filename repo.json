@@ -6,6 +6,6 @@
         "AbuRepo"
     ],
     "pluginLists": [
-        "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/refs/heads/builds/plugins.json"
+        "https://raw.githubusercontent.com/alyabroudy1/Abu-Repo/builds/plugins.json"
     ]
 }

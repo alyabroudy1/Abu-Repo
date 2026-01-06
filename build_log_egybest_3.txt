@@ -1,0 +1,42 @@
+> Task :EgyBest:preBuild UP-TO-DATE
+> Task :EgyBest:preDebugBuild UP-TO-DATE
+> Task :EgyBest:mergeDebugJniLibFolders UP-TO-DATE
+> Task :EgyBest:mergeDebugNativeLibs NO-SOURCE
+> Task :EgyBest:stripDebugDebugSymbols NO-SOURCE
+> Task :EgyBest:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :EgyBest:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :EgyBest:generateDebugResValues UP-TO-DATE
+> Task :EgyBest:generateDebugResources UP-TO-DATE
+> Task :EgyBest:packageDebugResources UP-TO-DATE
+> Task :EgyBest:parseDebugLocalResources UP-TO-DATE
+> Task :EgyBest:generateDebugRFile UP-TO-DATE
+> Task :EgyBest:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :EgyBest:javaPreCompileDebug UP-TO-DATE
+> Task :EgyBest:mergeDebugShaders UP-TO-DATE
+> Task :EgyBest:compileDebugShaders NO-SOURCE
+> Task :EgyBest:generateDebugAssets UP-TO-DATE
+> Task :EgyBest:packageDebugAssets UP-TO-DATE
+> Task :EgyBest:prepareDebugArtProfile UP-TO-DATE
+> Task :EgyBest:prepareLintJarForPublish UP-TO-DATE
+> Task :EgyBest:processDebugManifest UP-TO-DATE
+> Task :EgyBest:writeDebugAarMetadata UP-TO-DATE
+
+> Task :EgyBest:compileDebugKotlin FAILED
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:7:8 Unresolved reference 'kotlinx'.
+e: file:///C:/Users/abu-o/Abu%20Repo/EgyBest/src/main/kotlin/com/arabic/EgyBest.kt:43:13 Unresolved reference 'delay'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':EgyBest:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1s
+16 actionable tasks: 1 executed, 15 up-to-date

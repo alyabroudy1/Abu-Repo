@@ -7,6 +7,10 @@ import com.lagradost.cloudstream3.network.WebViewResolver
 import com.lagradost.cloudstream3.network.CloudflareKiller
 import com.lagradost.nicehttp.requestCreator
 import org.jsoup.nodes.Element
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
+import java.util.ArrayList
 
 class FaselHD : MainAPI() {
     override var mainUrl = "https://www.faselhds.biz"
@@ -49,17 +53,15 @@ class FaselHD : MainAPI() {
         val quality = select(".quality").first()?.text()?.replace("1080p |-".toRegex(), "")
         val type = if (title.contains("فيلم")) TvType.Movie else TvType.TvSeries
         
-        return MovieSearchResponse(
+        return newMovieSearchResponse(
             title.replace("الموسم الأول|برنامج|فيلم|مترجم|اون لاين|مسلسل|مشاهدة|انمي|أنمي".toRegex(), ""),
             url,
-            this@FaselHD.name,
-            type,
-            posterUrl,
-            null,
-            null,
-            quality = getQualityFromString(quality),
-            posterHeaders = cfKiller.getCookieHeaders(alternativeUrl).toMap()
-        )
+            type
+        ) {
+            this.posterUrl = posterUrl
+            this.quality = getQualityFromString(quality)
+            this.posterHeaders = cfKiller.getCookieHeaders(alternativeUrl).toMap()
+        }
     }
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -140,32 +142,35 @@ class FaselHD : MainAPI() {
             val episodes = ArrayList<Episode>()
             doc.select("div.epAll a").map {
                 episodes.add(
-                    Episode(
-                        it.attr("href"),
-                        it.text(),
-                        doc.select("div.seasonDiv.active div.title").text().getIntFromText() ?: 1,
-                        it.text().getIntFromText(),
-                    )
+                    newEpisode(it.attr("href")) {
+                        this.name = it.text()
+                        this.season = doc.select("div.seasonDiv.active div.title").text().getIntFromText() ?: 1
+                        this.episode = it.text().getIntFromText()
+                    }
                 )
             }
-            doc.select("div[id=\"seasonList\"] div[class=\"col-xl-2 col-lg-3 col-md-6\"] div.seasonDiv")
-                .not(".active").apmap { seasonElement ->
-                    val id = seasonElement.attr("onclick").replace(".*\\/\\?p=|'".toRegex(), "")
-                    var s = app.get("$mainUrl/?p=$id").document
-                    if (s.select("title").text() == "Just a moment...") {
-                        s = app.get("$alternativeUrl/?p=$id", interceptor = cfKiller).document
-                    }
-                    s.select("div.epAll a").map {
-                        episodes.add(
-                            Episode(
-                                it.attr("href"),
-                                it.text(),
-                                s.select("div.seasonDiv.active div.title").text().getIntFromText(),
-                                it.text().getIntFromText(),
-                            )
-                        )
-                    }
-                }
+            val seasonEpisodes = coroutineScope {
+                doc.select("div[id=\"seasonList\"] div[class=\"col-xl-2 col-lg-3 col-md-6\"] div.seasonDiv")
+                    .not(".active")
+                    .map { seasonElement ->
+                        async {
+                            val id = seasonElement.attr("onclick").replace(".*\\/\\?p=|'".toRegex(), "")
+                            var s = app.get("$mainUrl/?p=$id").document
+                            if (s.select("title").text() == "Just a moment...") {
+                                s = app.get("$alternativeUrl/?p=$id", interceptor = cfKiller).document
+                            }
+                            s.select("div.epAll a").map {
+                                newEpisode(it.attr("href")) {
+                                    this.name = it.text()
+                                    this.season =
+                                        s.select("div.seasonDiv.active div.title").text().getIntFromText()
+                                    this.episode = it.text().getIntFromText()
+                                }
+                            }
+                        }
+                    }.awaitAll().flatten()
+            }
+            episodes.addAll(seasonEpisodes)
             newTvSeriesLoadResponse(
                 title,
                 url,
@@ -216,10 +221,10 @@ class FaselHD : MainAPI() {
                             source = this.name,
                             name = "$name Download Source",
                             url = directLink,
-                            type = ExtractorLinkType.VIDEO,
-                            quality = Qualities.Unknown.value
+                            type = ExtractorLinkType.VIDEO
                         ) {
                             this.referer = mainUrl
+                            this.quality = Qualities.Unknown.value
                         }
                     )
                 }
@@ -274,10 +279,10 @@ class FaselHD : MainAPI() {
                     source = this.name,
                     name = "$name - MP4",
                     url = url,
-                    type = ExtractorLinkType.VIDEO,
-                    quality = Qualities.Unknown.value
+                    type = ExtractorLinkType.VIDEO
                 ) {
                     this.referer = mainUrl
+                    this.quality = Qualities.Unknown.value
                 }
             )
         }

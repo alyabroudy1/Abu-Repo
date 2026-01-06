@@ -3,6 +3,8 @@ package com.arabic
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
 import org.jsoup.nodes.Element
+import com.lagradost.nicehttp.NiceResponse
+import kotlinx.coroutines.delay
 
 class ArabSeed : MainAPI() {
     // ArabSeed uses rotating domains, this is the current main one
@@ -24,9 +26,9 @@ class ArabSeed : MainAPI() {
 
     // Helper method to simulate the "ScraperInterceptor" logic:
     // Retry on 403/503 with slight header modification or delay.
-    private suspend fun getSafe(url: String, headers: Map<String, String>? = null): com.lagradost.cloudstream3.NiceResponse {
+    private suspend fun getSafe(url: String, headers: Map<String, String>? = null): NiceResponse {
         return try {
-            app.get(url, headers = headers)
+            app.get(url, headers = headers ?: emptyMap())
         } catch (e: Exception) {
             // Retry once with a "cache bust" or slight tweak
             val newHeaders = (headers ?: emptyMap()).toMutableMap()
@@ -34,7 +36,7 @@ class ArabSeed : MainAPI() {
             newHeaders["Pragma"] = "no-cache"
             
             // Small delay to be "human-like"
-            kotlinx.coroutines.delay(1000) 
+            delay(1000) 
             
             app.get(url, headers = newHeaders)
         }
