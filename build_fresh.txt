@@ -1,0 +1,18 @@
+Starting a Gradle Daemon, 12 stopped Daemons could not be reused, use --status for details
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'C:\Users\abu-o\Abu Repo\build.gradle.kts' line: 26
+
+* What went wrong:
+java.lang.NoClassDefFoundError: org/jetbrains/kotlin/gradle/plugin/AbstractKotlinAndroidPluginWrapper
+> org/jetbrains/kotlin/gradle/plugin/AbstractKotlinAndroidPluginWrapper
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 21s

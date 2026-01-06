@@ -1,0 +1,23 @@
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring root project 'ArabicProviders'.
+> Could not resolve all artifacts for configuration ':classpath'.
+   > Cannot resolve external dependency com.android.tools.build:gradle:8.7.3 because no repositories are defined.
+     Required by:
+         project :
+   > Cannot resolve external dependency org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0 because no repositories are defined.
+     Required by:
+         project :
+   > Cannot resolve external dependency com.github.recloudstream:gradle:-SNAPSHOT because no repositories are defined.
+     Required by:
+         project :
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 712ms

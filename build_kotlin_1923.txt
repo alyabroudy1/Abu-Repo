@@ -1,0 +1,464 @@
+Starting a Gradle Daemon, 8 stopped Daemons could not be reused, use --status for details
+> Task :FaselHD:preBuild UP-TO-DATE
+> Task :FaselHD:preDebugBuild UP-TO-DATE
+> Task :FaselHD:mergeDebugJniLibFolders
+> Task :FaselHD:mergeDebugNativeLibs NO-SOURCE
+> Task :FaselHD:stripDebugDebugSymbols NO-SOURCE
+> Task :FaselHD:checkKotlinGradlePluginConfigurationErrors
+> Task :FaselHD:copyDebugJniLibsProjectAndLocalJars
+> Task :FaselHD:generateDebugResValues
+> Task :FaselHD:generateDebugResources
+> Task :FaselHD:packageDebugResources
+> Task :FaselHD:extractDeepLinksForAarDebug
+> Task :FaselHD:javaPreCompileDebug
+> Task :FaselHD:mergeDebugShaders
+> Task :FaselHD:compileDebugShaders NO-SOURCE
+> Task :FaselHD:generateDebugAssets UP-TO-DATE
+> Task :FaselHD:packageDebugAssets
+> Task :FaselHD:prepareDebugArtProfile
+> Task :FaselHD:prepareLintJarForPublish
+> Task :FaselHD:preReleaseBuild UP-TO-DATE
+> Task :FaselHD:mergeReleaseJniLibFolders
+> Task :FaselHD:mergeReleaseNativeLibs NO-SOURCE
+> Task :FaselHD:stripReleaseDebugSymbols NO-SOURCE
+> Task :FaselHD:copyReleaseJniLibsProjectAndLocalJars
+> Task :FaselHD:parseDebugLocalResources
+> Task :FaselHD:generateReleaseResValues
+> Task :FaselHD:writeDebugAarMetadata
+> Task :FaselHD:extractDeepLinksForAarRelease
+> Task :FaselHD:generateReleaseResources
+> Task :FaselHD:packageReleaseResources
+> Task :FaselHD:generateDebugRFile
+> Task :FaselHD:parseReleaseLocalResources
+> Task :FaselHD:processDebugManifest
+> Task :FaselHD:javaPreCompileRelease
+> Task :FaselHD:generateReleaseRFile
+> Task :FaselHD:mergeReleaseShaders
+> Task :FaselHD:compileReleaseShaders NO-SOURCE
+> Task :FaselHD:generateReleaseAssets UP-TO-DATE
+> Task :FaselHD:packageReleaseAssets
+> Task :FaselHD:prepareReleaseArtProfile
+> Task :FaselHD:writeReleaseAarMetadata
+> Task :FaselHD:processReleaseManifest
+> Task :FaselHD:mapReleaseSourceSetPaths
+> Task :FaselHD:mergeReleaseResources
+> Task :FaselHD:verifyReleaseResources
+
+> Task :FaselHD:compileReleaseKotlin FAILED
+e: Incompatible classes were found in dependencies. Remove them from the classpath or use '-Xskip-metadata-version-check' to suppress errors
+e: file:///C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/META-INF/app_prereleaseDebug.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.2.0, expected version is 1.9.0.
+e: file:///C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/META-INF/library.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.2.0, expected version is 1.9.0.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:5:41 Class 'com.lagradost.cloudstream3.utils.M3u8Helper' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:6:43 Class 'com.lagradost.cloudstream3.network.WebViewResolver' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/WebViewResolver.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:7:43 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:15:17 Class 'com.lagradost.cloudstream3.MainAPI' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainAPI.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:23:9 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:23:16 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:24:9 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:24:16 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:25:9 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:25:16 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:26:9 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:26:16 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:29:28 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:35:29 Unresolved reference: mainPageOf
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:45:43 Class 'com.lagradost.cloudstream3.SearchResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/SearchResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:20 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:48 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:55 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:66 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:73 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:56:16 Unresolved reference: newMovieSearchResponse
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:59:13 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:61:18 Unresolved reference: posterUrl
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:62:18 Unresolved reference: quality
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:62:28 Unresolved reference: getQualityFromString
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:63:18 Unresolved reference: posterHeaders
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:63:34 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:67:58 Class 'com.lagradost.cloudstream3.MainPageRequest' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainPageRequest.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:67:76 Class 'com.lagradost.cloudstream3.HomePageResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/HomePageResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:68:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:68:27 Class 'com.lagradost.cloudstream3.MainPageRequest' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainPageRequest.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:70:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:71:17 Class 'com.lagradost.cloudstream3.MainPageRequest' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainPageRequest.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:72:31 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:77:27 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:80:16 Unresolved reference: newHomePageResponse
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:80:36 Class 'com.lagradost.cloudstream3.MainPageRequest' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainPageRequest.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:83:54 Class 'com.lagradost.cloudstream3.SearchResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/SearchResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:85:21 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:87:21 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:87:64 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:91:17 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:95:45 Class 'com.lagradost.cloudstream3.LoadResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/LoadResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:101:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:103:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:103:51 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:111:28 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:119:28 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:123:20 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:126:13 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:131:16 Class 'com.lagradost.cloudstream3.LoadResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/LoadResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:132:13 Unresolved reference: newMovieLoadResponse
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:132:46 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:132:53 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:133:22 Unresolved reference: posterUrl
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:134:22 Unresolved reference: year
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:135:22 Unresolved reference: plot
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:136:22 Unresolved reference: duration
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:137:22 Unresolved reference: tags
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:138:22 Unresolved reference: recommendations
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:139:22 Unresolved reference: posterHeaders
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:139:38 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:142:38 Class 'com.lagradost.cloudstream3.Episode' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/Episode.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:144:26 Class 'com.lagradost.cloudstream3.Episode' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/Episode.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:145:21 Unresolved reference: newEpisode
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:145:32 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:146:37 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:147:30 Unresolved reference: season
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:148:30 Unresolved reference: episode
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:148:40 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:155:28 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:158:41 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:160:41 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:160:85 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:163:33 Unresolved reference: newEpisode
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:163:44 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:164:42 Unresolved reference: name
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:164:49 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:165:42 Unresolved reference: season
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:167:42 Unresolved reference: episode
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:167:52 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:174:13 Unresolved reference: newTvSeriesLoadResponse
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:177:17 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:177:24 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:178:48 Class 'com.lagradost.cloudstream3.Episode' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/Episode.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:180:22 Unresolved reference: duration
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:181:22 Unresolved reference: posterUrl
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:182:22 Unresolved reference: year
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:183:22 Unresolved reference: plot
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:184:22 Unresolved reference: tags
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:185:22 Unresolved reference: recommendations
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:186:22 Unresolved reference: posterHeaders
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:186:38 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:194:28 Class 'com.lagradost.cloudstream3.SubtitleFile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/SubtitleFile.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:195:20 Class 'com.lagradost.cloudstream3.utils.ExtractorLink' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLink.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:202:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:204:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:204:52 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:216:34 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:216:65 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:219:30 Class 'com.lagradost.cloudstream3.utils.ExtractorLink' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLink.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:220:25 Unresolved reference: newExtractorLink
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:224:36 Class 'com.lagradost.cloudstream3.utils.ExtractorLinkType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLinkType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:224:54 Class 'com.lagradost.cloudstream3.utils.ExtractorLinkType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLinkType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:226:34 Unresolved reference: referer
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:227:34 Unresolved reference: quality
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:227:44 Class 'com.lagradost.cloudstream3.utils.Qualities' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/Qualities.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:239:31 Class 'com.lagradost.cloudstream3.network.WebViewResolver' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/WebViewResolver.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:246:21 Class 'com.lagradost.cloudstream3.utils.M3u8Helper.Companion' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper$Companion.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:246:21 Class 'com.lagradost.cloudstream3.utils.M3u8Helper' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:264:17 Class 'com.lagradost.cloudstream3.utils.M3u8Helper.Companion' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper$Companion.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:264:17 Class 'com.lagradost.cloudstream3.utils.M3u8Helper' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:277:22 Class 'com.lagradost.cloudstream3.utils.ExtractorLink' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLink.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:278:17 Unresolved reference: newExtractorLink
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:282:28 Class 'com.lagradost.cloudstream3.utils.ExtractorLinkType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLinkType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:282:46 Class 'com.lagradost.cloudstream3.utils.ExtractorLinkType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLinkType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:284:26 Unresolved reference: referer
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:285:26 Unresolved reference: quality
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:285:36 Class 'com.lagradost.cloudstream3.utils.Qualities' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/Qualities.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:3:43 Class 'com.lagradost.cloudstream3.plugins.CloudstreamPlugin' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/plugins/CloudstreamPlugin.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:4:43 Class 'com.lagradost.cloudstream3.plugins.Plugin' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/plugins/Plugin.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:7:2 Class 'com.lagradost.cloudstream3.plugins.CloudstreamPlugin' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/plugins/CloudstreamPlugin.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:8:22 Class 'com.lagradost.cloudstream3.plugins.Plugin' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/plugins/Plugin.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:10:9 Class 'com.lagradost.cloudstream3.MainAPI' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainAPI.class
+
+> Task :FaselHD:compileDebugKotlin FAILED
+e: Incompatible classes were found in dependencies. Remove them from the classpath or use '-Xskip-metadata-version-check' to suppress errors
+e: file:///C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/META-INF/app_prereleaseDebug.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.2.0, expected version is 1.9.0.
+e: file:///C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/META-INF/library.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.2.0, expected version is 1.9.0.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:5:41 Class 'com.lagradost.cloudstream3.utils.M3u8Helper' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:6:43 Class 'com.lagradost.cloudstream3.network.WebViewResolver' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/WebViewResolver.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:7:43 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:15:17 Class 'com.lagradost.cloudstream3.MainAPI' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainAPI.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:23:9 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:23:16 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:24:9 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:24:16 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:25:9 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:25:16 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:26:9 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:26:16 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:29:28 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:35:29 Unresolved reference: mainPageOf
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:45:43 Class 'com.lagradost.cloudstream3.SearchResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/SearchResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:20 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:48 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:55 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:66 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:54:73 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:56:16 Unresolved reference: newMovieSearchResponse
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:59:13 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:61:18 Unresolved reference: posterUrl
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:62:18 Unresolved reference: quality
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:62:28 Unresolved reference: getQualityFromString
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:63:18 Unresolved reference: posterHeaders
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:63:34 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:67:58 Class 'com.lagradost.cloudstream3.MainPageRequest' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainPageRequest.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:67:76 Class 'com.lagradost.cloudstream3.HomePageResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/HomePageResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:68:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:68:27 Class 'com.lagradost.cloudstream3.MainPageRequest' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainPageRequest.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:70:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:71:17 Class 'com.lagradost.cloudstream3.MainPageRequest' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainPageRequest.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:72:31 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:77:27 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:80:16 Unresolved reference: newHomePageResponse
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:80:36 Class 'com.lagradost.cloudstream3.MainPageRequest' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainPageRequest.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:83:54 Class 'com.lagradost.cloudstream3.SearchResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/SearchResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:85:21 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:87:21 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:87:64 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:91:17 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:95:45 Class 'com.lagradost.cloudstream3.LoadResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/LoadResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:101:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:103:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:103:51 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:111:28 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:119:28 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:123:20 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:126:13 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:131:16 Class 'com.lagradost.cloudstream3.LoadResponse' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/LoadResponse.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:132:13 Unresolved reference: newMovieLoadResponse
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:132:46 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:132:53 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:133:22 Unresolved reference: posterUrl
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:134:22 Unresolved reference: year
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:135:22 Unresolved reference: plot
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:136:22 Unresolved reference: duration
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:137:22 Unresolved reference: tags
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:138:22 Unresolved reference: recommendations
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:139:22 Unresolved reference: posterHeaders
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:139:38 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:142:38 Class 'com.lagradost.cloudstream3.Episode' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/Episode.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:144:26 Class 'com.lagradost.cloudstream3.Episode' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/Episode.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:145:21 Unresolved reference: newEpisode
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:145:32 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:146:37 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:147:30 Unresolved reference: season
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:148:30 Unresolved reference: episode
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:148:40 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:155:28 Cannot infer a type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:158:41 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:160:41 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:160:85 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:163:33 Unresolved reference: newEpisode
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:163:44 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:164:42 Unresolved reference: name
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:164:49 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:165:42 Unresolved reference: season
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:167:42 Unresolved reference: episode
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:167:52 Unresolved reference: it
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:174:13 Unresolved reference: newTvSeriesLoadResponse
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:177:17 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:177:24 Class 'com.lagradost.cloudstream3.TvType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/TvType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:178:48 Class 'com.lagradost.cloudstream3.Episode' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/Episode.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:180:22 Unresolved reference: duration
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:181:22 Unresolved reference: posterUrl
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:182:22 Unresolved reference: year
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:183:22 Unresolved reference: plot
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:184:22 Unresolved reference: tags
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:185:22 Unresolved reference: recommendations
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:186:22 Unresolved reference: posterHeaders
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:186:38 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:194:28 Class 'com.lagradost.cloudstream3.SubtitleFile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/SubtitleFile.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:195:20 Class 'com.lagradost.cloudstream3.utils.ExtractorLink' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLink.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:202:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:204:23 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:204:52 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:216:34 Unresolved reference: get
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:216:65 Class 'com.lagradost.cloudstream3.network.CloudflareKiller' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/CloudflareKiller.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:219:30 Class 'com.lagradost.cloudstream3.utils.ExtractorLink' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLink.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:220:25 Unresolved reference: newExtractorLink
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:224:36 Class 'com.lagradost.cloudstream3.utils.ExtractorLinkType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLinkType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:224:54 Class 'com.lagradost.cloudstream3.utils.ExtractorLinkType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLinkType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:226:34 Unresolved reference: referer
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:227:34 Unresolved reference: quality
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:227:44 Class 'com.lagradost.cloudstream3.utils.Qualities' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/Qualities.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:239:31 Class 'com.lagradost.cloudstream3.network.WebViewResolver' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/network/WebViewResolver.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:246:21 Class 'com.lagradost.cloudstream3.utils.M3u8Helper.Companion' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper$Companion.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:246:21 Class 'com.lagradost.cloudstream3.utils.M3u8Helper' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:264:17 Class 'com.lagradost.cloudstream3.utils.M3u8Helper.Companion' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper$Companion.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:264:17 Class 'com.lagradost.cloudstream3.utils.M3u8Helper' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/M3u8Helper.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:277:22 Class 'com.lagradost.cloudstream3.utils.ExtractorLink' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLink.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:278:17 Unresolved reference: newExtractorLink
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:282:28 Class 'com.lagradost.cloudstream3.utils.ExtractorLinkType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLinkType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:282:46 Class 'com.lagradost.cloudstream3.utils.ExtractorLinkType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/ExtractorLinkType.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:284:26 Unresolved reference: referer
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:285:26 Unresolved reference: quality
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHD.kt:285:36 Class 'com.lagradost.cloudstream3.utils.Qualities' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/utils/Qualities.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:3:43 Class 'com.lagradost.cloudstream3.plugins.CloudstreamPlugin' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/plugins/CloudstreamPlugin.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:4:43 Class 'com.lagradost.cloudstream3.plugins.Plugin' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/plugins/Plugin.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:7:2 Class 'com.lagradost.cloudstream3.plugins.CloudstreamPlugin' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/plugins/CloudstreamPlugin.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:8:22 Class 'com.lagradost.cloudstream3.plugins.Plugin' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/plugins/Plugin.class
+e: file:///C:/Users/abu-o/Abu%20Repo/FaselHD/src/main/kotlin/com/arabic/FaselHDPlugin.kt:10:9 Class 'com.lagradost.cloudstream3.MainAPI' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.2.0, but the compiler version 1.9.0 can read versions up to 2.0.0.
+The class is loaded from C:/Users/abu-o/.gradle/caches/cloudstream/cloudstream/cloudstream.jar!/com/lagradost/cloudstream3/MainAPI.class
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':FaselHD:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':FaselHD:compileReleaseKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+BUILD FAILED in 37s
+35 actionable tasks: 35 executed

@@ -1,0 +1,22 @@
+Starting a Gradle Daemon, 14 stopped Daemons could not be reused, use --status for details
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring root project 'ArabicProviders'.
+> Could not resolve all artifacts for configuration ':classpath'.
+   > Could not resolve com.github.recloudstream:gradle:cce1b8d8.
+     Required by:
+         project :
+      > Could not resolve com.github.recloudstream:gradle:cce1b8d8.
+         > Could not get resource 'https://jitpack.io/com/github/recloudstream/gradle/cce1b8d8/gradle-cce1b8d8.pom'.
+            > Could not GET 'https://jitpack.io/com/github/recloudstream/gradle/cce1b8d8/gradle-cce1b8d8.pom'.
+               > Read timed out
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 38s

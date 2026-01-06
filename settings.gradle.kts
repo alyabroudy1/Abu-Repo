@@ -24,5 +24,6 @@ include(
     "CimaLeek",
     "EgyBest",
     "EgyDead",
-    "ArabSeed"
+    "ArabSeed",
+    "ExampleProvider"
 )

@@ -1,0 +1,212 @@
+Downloading https://services.gradle.org/distributions/gradle-8.9-bin.zip
+............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
+Welcome to Gradle 8.9!
+
+Here are the highlights of this release:
+ - Enhanced Error and Warning Messages
+ - IDE Integration Improvements
+ - Daemon JVM Information
+
+For more details see https://docs.gradle.org/8.9/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :
+w: file:///C:/Users/abu-o/Abu%20Repo/build.gradle.kts:44:13: 'kotlinOptions(KotlinJvmOptionsDeprecated /* = KotlinJvmOptions */.() -> Unit): Unit' is deprecated. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+
+> Task :ArabSeed:preBuild UP-TO-DATE
+> Task :ArabSeed:preDebugBuild UP-TO-DATE
+> Task :ArabSeed:mergeDebugJniLibFolders
+> Task :ArabSeed:mergeDebugNativeLibs NO-SOURCE
+> Task :ArabSeed:stripDebugDebugSymbols NO-SOURCE
+> Task :ArabSeed:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :ArabSeed:copyDebugJniLibsProjectAndLocalJars
+> Task :ArabSeed:generateDebugResValues
+> Task :ArabSeed:generateDebugResources
+> Task :ArabSeed:packageDebugResources
+> Task :ArabSeed:extractDeepLinksForAarDebug
+> Task :ArabSeed:javaPreCompileDebug
+> Task :ArabSeed:mergeDebugShaders
+> Task :ArabSeed:compileDebugShaders NO-SOURCE
+> Task :ArabSeed:generateDebugAssets UP-TO-DATE
+> Task :ArabSeed:packageDebugAssets
+> Task :ArabSeed:prepareDebugArtProfile
+> Task :ArabSeed:prepareLintJarForPublish
+> Task :ArabSeed:parseDebugLocalResources
+> Task :CimaLeek:preBuild UP-TO-DATE
+> Task :CimaLeek:preDebugBuild UP-TO-DATE
+> Task :ArabSeed:writeDebugAarMetadata
+> Task :CimaLeek:mergeDebugJniLibFolders
+> Task :CimaLeek:mergeDebugNativeLibs NO-SOURCE
+> Task :CimaLeek:stripDebugDebugSymbols NO-SOURCE
+> Task :CimaLeek:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :CimaLeek:copyDebugJniLibsProjectAndLocalJars
+> Task :CimaLeek:generateDebugResValues
+> Task :CimaLeek:generateDebugResources
+> Task :ArabSeed:generateDebugRFile
+> Task :CimaLeek:packageDebugResources
+> Task :ArabSeed:processDebugManifest
+> Task :CimaLeek:extractDeepLinksForAarDebug
+> Task :CimaLeek:parseDebugLocalResources
+> Task :CimaLeek:javaPreCompileDebug
+> Task :CimaLeek:mergeDebugShaders
+> Task :CimaLeek:compileDebugShaders NO-SOURCE
+> Task :CimaLeek:generateDebugAssets UP-TO-DATE
+> Task :CimaLeek:generateDebugRFile
+> Task :CimaLeek:packageDebugAssets
+> Task :CimaLeek:prepareDebugArtProfile
+> Task :CimaLeek:prepareLintJarForPublish
+> Task :EgyBest:preBuild UP-TO-DATE
+> Task :EgyBest:preDebugBuild UP-TO-DATE
+> Task :CimaLeek:writeDebugAarMetadata
+> Task :CimaLeek:processDebugManifest
+> Task :EgyBest:mergeDebugJniLibFolders
+> Task :EgyBest:mergeDebugNativeLibs NO-SOURCE
+> Task :EgyBest:stripDebugDebugSymbols NO-SOURCE
+> Task :EgyBest:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :EgyBest:copyDebugJniLibsProjectAndLocalJars
+> Task :EgyBest:generateDebugResValues
+> Task :EgyBest:generateDebugResources
+> Task :EgyBest:packageDebugResources
+> Task :EgyBest:extractDeepLinksForAarDebug
+> Task :EgyBest:parseDebugLocalResources
+> Task :EgyBest:javaPreCompileDebug
+> Task :EgyBest:mergeDebugShaders
+> Task :EgyBest:compileDebugShaders NO-SOURCE
+> Task :EgyBest:generateDebugAssets UP-TO-DATE
+> Task :EgyBest:generateDebugRFile
+> Task :EgyBest:packageDebugAssets
+> Task :EgyBest:prepareDebugArtProfile
+> Task :EgyBest:prepareLintJarForPublish
+> Task :EgyDead:preBuild UP-TO-DATE
+> Task :EgyDead:preDebugBuild UP-TO-DATE
+> Task :EgyBest:writeDebugAarMetadata
+> Task :EgyBest:processDebugManifest
+> Task :EgyDead:mergeDebugJniLibFolders
+> Task :EgyDead:mergeDebugNativeLibs NO-SOURCE
+> Task :EgyDead:stripDebugDebugSymbols NO-SOURCE
+> Task :EgyDead:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :EgyDead:copyDebugJniLibsProjectAndLocalJars
+> Task :EgyDead:generateDebugResValues
+> Task :EgyDead:generateDebugResources
+> Task :EgyDead:packageDebugResources
+> Task :EgyDead:extractDeepLinksForAarDebug
+> Task :EgyDead:parseDebugLocalResources
+> Task :EgyDead:javaPreCompileDebug
+> Task :EgyDead:mergeDebugShaders
+> Task :EgyDead:generateDebugRFile
+> Task :EgyDead:compileDebugShaders NO-SOURCE
+> Task :EgyDead:generateDebugAssets UP-TO-DATE
+> Task :EgyDead:packageDebugAssets
+> Task :EgyDead:prepareDebugArtProfile
+> Task :EgyDead:prepareLintJarForPublish
+> Task :FaselHD:preBuild UP-TO-DATE
+> Task :FaselHD:preDebugBuild UP-TO-DATE
+> Task :EgyDead:writeDebugAarMetadata
+> Task :EgyDead:processDebugManifest
+> Task :FaselHD:mergeDebugJniLibFolders
+> Task :FaselHD:mergeDebugNativeLibs NO-SOURCE
+> Task :FaselHD:stripDebugDebugSymbols NO-SOURCE
+> Task :FaselHD:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :FaselHD:copyDebugJniLibsProjectAndLocalJars
+> Task :FaselHD:generateDebugResValues
+> Task :FaselHD:generateDebugResources
+> Task :FaselHD:packageDebugResources
+> Task :FaselHD:extractDeepLinksForAarDebug
+> Task :FaselHD:parseDebugLocalResources
+> Task :FaselHD:javaPreCompileDebug
+> Task :FaselHD:mergeDebugShaders
+> Task :FaselHD:generateDebugRFile
+> Task :FaselHD:compileDebugShaders NO-SOURCE
+> Task :FaselHD:generateDebugAssets UP-TO-DATE
+> Task :FaselHD:packageDebugAssets
+> Task :FaselHD:prepareDebugArtProfile
+> Task :FaselHD:prepareLintJarForPublish
+> Task :MyCima:preBuild UP-TO-DATE
+> Task :MyCima:preDebugBuild UP-TO-DATE
+> Task :FaselHD:writeDebugAarMetadata
+> Task :FaselHD:processDebugManifest
+> Task :MyCima:mergeDebugJniLibFolders
+> Task :MyCima:mergeDebugNativeLibs NO-SOURCE
+> Task :MyCima:stripDebugDebugSymbols NO-SOURCE
+> Task :MyCima:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :MyCima:copyDebugJniLibsProjectAndLocalJars
+> Task :MyCima:generateDebugResValues
+> Task :MyCima:generateDebugResources
+> Task :MyCima:packageDebugResources
+> Task :MyCima:extractDeepLinksForAarDebug
+> Task :MyCima:parseDebugLocalResources
+> Task :MyCima:javaPreCompileDebug
+> Task :MyCima:generateDebugRFile
+> Task :MyCima:mergeDebugShaders
+> Task :MyCima:compileDebugShaders NO-SOURCE
+> Task :MyCima:generateDebugAssets UP-TO-DATE
+> Task :MyCima:packageDebugAssets
+> Task :MyCima:prepareDebugArtProfile
+> Task :MyCima:prepareLintJarForPublish
+> Task :MyCima:writeDebugAarMetadata
+> Task :MyCima:processDebugManifest
+> Task :ArabSeed:compileDebugKotlin
+> Task :CimaLeek:compileDebugKotlin
+> Task :EgyBest:compileDebugKotlin
+> Task :EgyDead:compileDebugKotlin
+> Task :FaselHD:compileDebugKotlin
+> Task :MyCima:compileDebugKotlin
+> Task :ArabSeed:extractDebugAnnotations
+> Task :ArabSeed:compileDebugJavaWithJavac NO-SOURCE
+> Task :ArabSeed:mergeDebugGeneratedProguardFiles
+> Task :ArabSeed:mergeDebugConsumerProguardFiles
+> Task :ArabSeed:processDebugJavaRes
+> Task :CimaLeek:extractDebugAnnotations
+> Task :CimaLeek:compileDebugJavaWithJavac NO-SOURCE
+> Task :CimaLeek:mergeDebugGeneratedProguardFiles
+> Task :CimaLeek:mergeDebugConsumerProguardFiles
+> Task :CimaLeek:processDebugJavaRes
+> Task :EgyBest:extractDebugAnnotations
+> Task :EgyBest:compileDebugJavaWithJavac NO-SOURCE
+> Task :EgyBest:mergeDebugGeneratedProguardFiles
+> Task :EgyBest:mergeDebugConsumerProguardFiles
+> Task :EgyBest:processDebugJavaRes
+> Task :ArabSeed:mergeDebugJavaResource
+> Task :CimaLeek:mergeDebugJavaResource
+> Task :EgyBest:mergeDebugJavaResource
+> Task :EgyDead:extractDebugAnnotations
+> Task :ArabSeed:syncDebugLibJars
+> Task :ArabSeed:bundleDebugAar
+> Task :ArabSeed:assembleDebug
+> Task :CimaLeek:syncDebugLibJars
+> Task :CimaLeek:bundleDebugAar
+> Task :CimaLeek:assembleDebug
+> Task :EgyBest:syncDebugLibJars
+> Task :EgyBest:bundleDebugAar
+> Task :EgyBest:assembleDebug
+> Task :EgyDead:compileDebugJavaWithJavac NO-SOURCE
+> Task :EgyDead:mergeDebugGeneratedProguardFiles
+> Task :EgyDead:mergeDebugConsumerProguardFiles
+> Task :EgyDead:processDebugJavaRes
+> Task :EgyDead:mergeDebugJavaResource
+> Task :FaselHD:extractDebugAnnotations
+> Task :EgyDead:syncDebugLibJars
+> Task :EgyDead:bundleDebugAar
+> Task :EgyDead:assembleDebug
+> Task :FaselHD:compileDebugJavaWithJavac NO-SOURCE
+> Task :FaselHD:mergeDebugGeneratedProguardFiles
+> Task :FaselHD:mergeDebugConsumerProguardFiles
+> Task :FaselHD:processDebugJavaRes
+> Task :FaselHD:mergeDebugJavaResource
+> Task :MyCima:extractDebugAnnotations
+> Task :FaselHD:syncDebugLibJars
+> Task :FaselHD:bundleDebugAar
+> Task :FaselHD:assembleDebug
+> Task :MyCima:compileDebugJavaWithJavac NO-SOURCE
+> Task :MyCima:mergeDebugGeneratedProguardFiles
+> Task :MyCima:mergeDebugConsumerProguardFiles
+> Task :MyCima:processDebugJavaRes
+> Task :MyCima:mergeDebugJavaResource
+> Task :MyCima:syncDebugLibJars
+> Task :MyCima:bundleDebugAar
+> Task :MyCima:assembleDebug
+
+BUILD SUCCESSFUL in 1m 3s
+138 actionable tasks: 138 executed

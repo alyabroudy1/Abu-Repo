@@ -1,0 +1,68 @@
+> Task :ArabSeed:preBuild UP-TO-DATE
+> Task :ArabSeed:preDebugBuild UP-TO-DATE
+> Task :ArabSeed:mergeDebugJniLibFolders
+> Task :ArabSeed:mergeDebugNativeLibs NO-SOURCE
+> Task :ArabSeed:stripDebugDebugSymbols NO-SOURCE
+> Task :ArabSeed:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :ArabSeed:generateDebugResValues
+> Task :ArabSeed:copyDebugJniLibsProjectAndLocalJars
+> Task :ArabSeed:generateDebugResources
+> Task :ArabSeed:packageDebugResources
+> Task :ArabSeed:extractDeepLinksForAarDebug
+> Task :ArabSeed:mergeDebugShaders
+> Task :ArabSeed:compileDebugShaders NO-SOURCE
+> Task :ArabSeed:javaPreCompileDebug
+> Task :ArabSeed:generateDebugAssets UP-TO-DATE
+> Task :ArabSeed:packageDebugAssets
+> Task :ArabSeed:prepareDebugArtProfile
+> Task :ArabSeed:prepareLintJarForPublish
+> Task :ArabSeed:preReleaseBuild UP-TO-DATE
+> Task :ArabSeed:mergeReleaseJniLibFolders
+> Task :ArabSeed:mergeReleaseNativeLibs NO-SOURCE
+> Task :ArabSeed:stripReleaseDebugSymbols NO-SOURCE
+> Task :ArabSeed:parseDebugLocalResources
+> Task :ArabSeed:writeDebugAarMetadata
+> Task :ArabSeed:copyReleaseJniLibsProjectAndLocalJars
+> Task :ArabSeed:generateReleaseResValues
+> Task :ArabSeed:extractDeepLinksForAarRelease
+> Task :ArabSeed:generateReleaseResources
+> Task :ArabSeed:packageReleaseResources
+> Task :ArabSeed:generateDebugRFile
+> Task :ArabSeed:javaPreCompileRelease
+> Task :ArabSeed:parseReleaseLocalResources
+> Task :ArabSeed:mergeReleaseShaders
+> Task :ArabSeed:processDebugManifest
+> Task :ArabSeed:compileReleaseShaders NO-SOURCE
+> Task :ArabSeed:generateReleaseAssets UP-TO-DATE
+> Task :ArabSeed:generateReleaseRFile
+> Task :ArabSeed:packageReleaseAssets
+> Task :ArabSeed:prepareReleaseArtProfile
+> Task :ArabSeed:writeReleaseAarMetadata
+> Task :ArabSeed:processReleaseManifest
+> Task :ArabSeed:mapReleaseSourceSetPaths
+> Task :ArabSeed:mergeReleaseResources
+> Task :ArabSeed:verifyReleaseResources
+> Task :ArabSeed:compileReleaseKotlin
+> Task :ArabSeed:compileDebugKotlin
+> Task :ArabSeed:extractReleaseAnnotations
+> Task :ArabSeed:extractDebugAnnotations
+> Task :ArabSeed:compileDebugJavaWithJavac NO-SOURCE
+> Task :ArabSeed:mergeDebugGeneratedProguardFiles
+> Task :ArabSeed:mergeDebugConsumerProguardFiles
+> Task :ArabSeed:processDebugJavaRes
+> Task :ArabSeed:compileReleaseJavaWithJavac NO-SOURCE
+> Task :ArabSeed:mergeReleaseGeneratedProguardFiles
+> Task :ArabSeed:mergeDebugJavaResource
+> Task :ArabSeed:mergeReleaseConsumerProguardFiles
+> Task :ArabSeed:syncDebugLibJars
+> Task :ArabSeed:bundleDebugAar
+> Task :ArabSeed:assembleDebug
+> Task :ArabSeed:processReleaseJavaRes
+> Task :ArabSeed:mergeReleaseJavaResource
+> Task :ArabSeed:syncReleaseLibJars
+> Task :ArabSeed:bundleReleaseAar
+> Task :ArabSeed:assembleRelease
+> Task :ArabSeed:assemble
+
+BUILD SUCCESSFUL in 3s
+48 actionable tasks: 48 executed
